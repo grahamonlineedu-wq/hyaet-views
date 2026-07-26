@@ -1,0 +1,243 @@
+/* Custom Palette: Deep Black/Charcoal, Bright Yellow & Red */
+:root {
+  --bg-color: #0d0d0d;
+  --card-bg: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --accent-yellow: #facc15;
+  --accent-yellow-hover: #eab308;
+  --border-color: #27272a;
+  --danger-red: #ef4444;
+  --warning-amber: #f97316;
+  --success-green: #22c55e;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: var(--accent-yellow);
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: var(--accent-yellow);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+/* Form Controls */
+.input-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+input[type="text"],
+select {
+  flex: 1;
+  min-width: 200px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: var(--accent-yellow);
+}
+
+/* Primary Yellow Action Buttons */
+button {
+  background-color: var(--accent-yellow);
+  color: #000000;
+  font-weight: 700;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: var(--accent-yellow-hover);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Status Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge.clean {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: var(--success-green);
+  border: 1px solid var(--success-green);
+}
+
+.badge.suspicious {
+  background-color: rgba(250, 204, 21, 0.15);
+  color: var(--accent-yellow);
+  border: 1px solid var(--accent-yellow);
+}
+
+.badge.high-risk {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: var(--danger-red);
+  border: 1px solid var(--danger-red);
+}
+
+/* Results Display */
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.result-item {
+  background-color: var(--bg-color);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.result-item label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.result-item span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Threat Details List */
+.threat-list {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.threat-list li {
+  background-color: rgba(239, 68, 68, 0.15);
+  border-left: 4px solid var(--danger-red);
+  color: #fca5a5;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.9rem;
+}
+
+/* Tables for Rules & Logs */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+th {
+  color: var(--accent-yellow);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+tr:hover {
+  background-color: rgba(250, 204, 21, 0.03);
+}
+
+/* Delete / High-Alert Red Buttons */
+.btn-delete {
+  background-color: transparent;
+  color: var(--danger-red);
+  padding: 6px 12px;
+  border: 1px solid var(--danger-red);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-delete:hover {
+  background-color: var(--danger-red);
+  color: #ffffff;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  input[type="text"], select, button {
+    width: 100%;
+  }
+}
+
