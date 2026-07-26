@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "three": "^0.185.1"
-  },
-  "devDependencies": {
-    "eslint": "^10.7.0"
-  }
-}

@@ -1,274 +1,500 @@
-pkg update && pkg upgrade -y && pkg install git nodejs python sqlite -y
+ssh-keygen -t ed25519 -C "your_email@example.com"
 exit
 pkg update && pkg upgrade -y
-mkdir -p gg-combat-ops/public
-cd gg-combat-ops
-npm init -y
-npm install express socket.io
-# Write backend server.js file
-cat << 'EOF' > server.js
-const express = require('express');
-const app = express();
-const http = require('http').createServer(app);
-const io = require('socket.io')(http);
+pkg install git nano curl wget -y
+pkg install vim -y.
+pkg install git -y
+git config --global user.name "grahamonlineedu-wq"git config --global user.email "grahamonline.edu@gmail.com"ssh-keygen -t ed25519 -C "grahamonline.edu@gmail.com"
+ls
+ssh-keygen -t ed25519
+exit
+rm -rf ~/.ssh
+rm -rf ~/projects
+exit
+nano style.css
+nano main.js
+nano index.html
+npx serve
+exit
+mkdir ~/projects
+cd ~/projects
+git init
+git push
+gitpush
+nano index.html
+npm run dev
+ls
+npm run dev
+exit
+killall -9 node python 2>/dev/null
+rm -rf ~/projects
+mkdir ~/projects
+cd ~/projects
+nano index.html
+nano style.css
+nano main.js
+npm run dev
+exit
+killall -9 node python 2>/dev/null
+rm -rf ~/projects
+mkdir ~/projects
+cd ~/projects
+nano index.html
+nano style.css
+nano main.js
+python -m http.server 8000 --bind 127.0.0.1
+nano index.html
+python -m http.server 8000 --bind 127.0.0.1
+termux-wake-unlock
+exit
+package install tcdump
+tcdump -iwlan0-c 10
+exit
+pkg update && pkg upgrade
+termux-setup-storage
+pkg update && pkg upgrade
+termux-setup-storage
+ls
+cd <directory>
+git clone <repository-url>
+pkg install tcpdump
+tcpdump-iwlan0 -c 10
+exit
+pkg update && pkg upgrade
+termux-setup-storage
+y
+exit
+pkg update && pkg upgrade
+termux-setup-storage
+y
+exit
+cd /files/home/attat-services/
+python -m http.server 8158
+bg
+cd ~/projects
+ls
+nano index.html
+nano main.js
+nano style.css
+python -m http.server 8000 --bind 127.0.0.1
+# Move back to your main directory
+cd ~
+# Create a new folder for the service app
+mkdir attat-services
+# Navigate into it
+cd attat-services
+# 1. Make sure you are in the project folder
+cd ~/attat-services
+# 2. Initialize Git (industry standard for tracking code changes)
+git init
+# 3. Create a clean folder structure
+mkdir -p assets/css assets/js
+# 4. Create your core files
+touch index.html assets/css/style.css assets/js/app.js
+# 5. Verify everything is in place
+ls -R
+nano index.html
+nano assets/css/style.css
+nano assets/js/app.js
+git add .
+git commit -m "feat: initial commit for attat-services MVP prototype"
+8001
+cd ~/attat-services
+python -m http.server 8001 --bind 127.0.0.1
+git add .
+git commit -m "feat: completed working mvp with secure otp and tracker"
+termux-setup-storage
+rm -rf ~/storage
+termux-setup-storage
+ln -s ~/attat-services ~/storage/shared/Documents/attat-services
+python -m http.server 8001 --bind 127.0.0.1
+cd ~/attat-services
+python -m http.server 8001 --bind 127.0.0.1
+ls
+ls -R
+ls -R ~/projects
+ls -d ~/projects ~/attat-services 2>/dev/null
+python -m http.server 8001 --bind 127.0.0.1
+let selectedServiceType = "";
+let generatedOTP = "";
+// --- STATE MEMORY MANAGEMENT ---
+// Save the current app state to local storage
+function saveAppState(state, details = {}) {
+pkg && pkg update
+termux-setup-storage
+ls
+exit
+pkg upgrade && pkg update
+exit
+pkg update && pkg upgrade
+exit
+pkg install git python python-pip -y
+git clone https://github.com/sundowndev/phoneinfoga.git
+cd phoneinfoga
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock
+git clone https://github.com/iojw/socialscan.git
+cd socialscan
+pip install -r requirements.txt
+pip install .
+pip install socialscan
+socialscan target - 1owolorichy@gmail.com
+cd ..
+pip install -r requirements.txt
+python sherlock.py 1owolorichy
+cd sherlock
+pip install -r requirements.txt
+python sherlock.py 1owolorichy
+pkg install python git
+exit
+pkg update && pkg upgrade
+pkg install python git
+git clone https://github.com/sundowndev/phoneinfoga.git
+cd phoneinfoga
+pip install -r requirements.txt
+exit
+# Go to your home directory
+cd ~
+# Create a structured OSINT directory
+mkdir -p OSINT/tools OSINT/projects OSINT/reports
+# Navigate into your tools directory
+cd OSINT/tools
+# Use 'sudo apt install' on Linux or 'pkg install' on Termux
+pkg install git python python-pip curl wget libxslt libxml2 -y
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock && pip install -r requirements.txt && cd ..
+git clone https://github.com/laramies/theHarvester.git
+cd theHarvester && pip install -r requirements.txt && cd ..
+pip install holehe
+sudo apt install tor proxychains -y
+pip3 install holehe
+target1owolorichy@gmail.com
+pkg install python python-pip -y
+python -m holehe 1owolorichy@gmail.com
+holehe 1owolorichy@gmail.com
+holehe --only-used 1owolorichy@gmail.com
+pip install ghunt
+ghunt login
+ghunt email 1owolorichy@gmail.com
+cd ~/phoneinfoga/sherlock/sherlock
+python sherlock.py 1owolorichy
+# 1. Install the pre-compiled numpy binary directly from Termux
+pkg install python-numpy -y
+# 1. Jump straight into your correct Sherlock folder
+cd ~/OSINT/tools/sherlock/sherlock
+# 2. Run your handle tracking tool
+python sherlock.py 1owolorichy
+pip install ghunt
+exit
+FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+brew install corelocationcli
+CoreLocationCLI --watch --json
+Get Current Location
+Get Contents of URL
+termux-location -p gps -r once
+pkg install python -y
+mkdir ~/portfolio && cd ~/portfolio
+echo "<h1>My Personal Portfolio under development</h1>" > index.html
+python -m http.server 8080
+exit
+cat << 'EOF' > ~/portfolio/webhook_listener.py
+import json
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
-app.use(express.static('public'));
+class WebhookHandler(BaseHTTPRequestHandler):
+    def do_POST(self):
+        # Read the length of the incoming alert data
+        content_length = int(self.headers['Content-Length'])
+        post_data = self.rfile.read(content_length)
+        
+        # Parse the JSON payload from Canarytokens
+        try:
+            alert_payload = json.loads(post_data.decode('utf-8'))
+            print("\n[!] ALERT: Canarytoken Triggered!")
+            print(json.dumps(alert_payload, indent=4))
+        except Exception as e:
+            print(f"\n[!] Received non-JSON or malformed payload: {e}")
+            print(post_data.decode('utf-8'))
 
-let players = {};
+        # Send a 200 OK response back to the Canarytoken server
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json')
+        self.end_headers()
+        self.wfile.write(b'{"status":"success"}')
 
-io.on('connection', (socket) => {
-    console.log(`Player connected: ${socket.id}`);
-    
-    const team = Object.keys(players).filter(id => players[id].team === 'Alfa').length 
-                 <= Object.keys(players).filter(id => players[id].team === 'Bravo').length 
-                 ? 'Alfa' : 'Bravo';
+def run(port=9090):
+    server_address = ('', port)
+    httpd = HTTPServer(server_address, WebhookHandler)
+    print(f"[*] Local Webhook Listener running on port {port}...")
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\n[*] Shutting down listener.")
+        httpd.server_close()
 
-    players[socket.id] = {
-        id: socket.id,
-        x: team === 'Alfa' ? 100 : 700,
-        y: 200,
-        team: team,
-        weapon: 'M16',
-        health: 100
-    };
-
-    socket.emit('currentPlayers', players);
-    socket.broadcast.emit('newPlayer', players[socket.id]);
-
-    socket.on('playerMovement', (movementData) => {
-        if (players[socket.id]) {
-            players[socket.id].x = movementData.x;
-            players[socket.id].y = movementData.y;
-            socket.broadcast.emit('playerMoved', players[socket.id]);
-        }
-    });
-
-    socket.on('disconnect', () => {
-        console.log(`Player disconnected: ${socket.id}`);
-        delete players[socket.id];
-        io.emit('playerDisconnected', socket.id);
-    });
-});
-
-const PORT = 3000;
-http.listen(PORT, () => {
-    console.log(`GG combat ops server running on http://localhost:${PORT}`);
-});
+if __name__ == '__main__':
+    run()
 EOF
 
-# Write index.html to public
-cat << 'EOF' > public/index.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>GG combat ops</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="/socket.io/socket.io.js"></script>
-</head>
-<body>
-    <div id="game-container">
-        <header>
-            <span id="game-title">GG combat ops</span>
-            <span id="team-info">Joining squad...</span>
-        </header>
-        <canvas id="gameCanvas" width="800" height="400"></canvas>
-        <div id="controls">
-            <div id="joystick-zone">Drag to Move</div>
-            <div id="weapon-select">
-                <button onclick="changeWeapon('M16')">M16</button>
-                <button onclick="changeWeapon('AK117')">AK 117</button>
-                <button onclick="changeWeapon('LR7')">LR7 Sniper</button>
-            </div>
-        </div>
-    </div>
-    <script src="game.js"></script>
-</body>
-</html>
+python ~/portfolio/webhook_listener.py
+exit
+cat << 'EOF' > ~/portfolio/webhook_listener.py
+import json
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+class WebhookHandler(BaseHTTPRequestHandler):
+    def do_POST(self):
+        # Read the length of the incoming alert data
+        content_length = int(self.headers['Content-Length'])
+        post_data = self.rfile.read(content_length)
+        
+        # Parse the JSON payload from Canarytokens
+        try:
+            alert_payload = json.loads(post_data.decode('utf-8'))
+            print("\n[!] ALERT: Canarytoken Triggered!")
+            print(json.dumps(alert_payload, indent=4))
+        except Exception as e:
+            print(f"\n[!] Received non-JSON or malformed payload: {e}")
+            print(post_data.decode('utf-8'))
+
+        # Send a 200 OK response back to the Canarytoken server
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json')
+        self.end_headers()
+        self.wfile.write(b'{"status":"success"}')
+
+def run(port=9090):
+    server_address = ('', port)
+    httpd = HTTPServer(server_address, WebhookHandler)
+    print(f"[*] Local Webhook Listener running on port {port}...")
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\n[*] Shutting down listener.")
+        httpd.server_close()
+
+if __name__ == '__main__':
+    run()
 EOF
 
-# Write style.css to public
-cat << 'EOF' > public/style.css
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    user-select: none;
-}
-body {
-    background-color: #1a1a1a;
-    color: #fff;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-#game-container {
-    width: 100vw;
-    max-width: 850px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background: #333;
-}
-#game-title {
-    font-weight: bold;
-    color: #ffcc00;
-}
-canvas {
-    background: #252525;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #444;
-}
-#controls {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #111;
-    padding: 10px;
-}
-#joystick-zone {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-}
-#weapon-select button {
-    padding: 10px 15px;
-    margin: 5px;
-    background: #444;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#weapon-select button:active {
-    background: #ffcc00;
-    color: #000;
-}
-EOF
-
-# Write game.js to public
-cat << 'EOF' > public/game.js
-const socket = io();
-const canvas = document.getElementById('gameCanvas');
-const ctx = canvas.getContext('2d');
-const teamInfo = document.getElementById('team-info');
-
-let localPlayer = null;
-let remotePlayers = {};
-let touchStart = null;
-let movementVector = { x: 0, y: 0 };
-
-socket.on('currentPlayers', (players) => {
-    Object.keys(players).forEach((id) => {
-        if (id === socket.id) {
-            localPlayer = players[id];
-            teamInfo.textContent = `Team: ${localPlayer.team} | Weapon: ${localPlayer.weapon}`;
-        } else {
-            remotePlayers[id] = players[id];
-        }
-    });
-});
-
-socket.on('newPlayer', (playerInfo) => {
-    remotePlayers[playerInfo.id] = playerInfo;
-});
-
-socket.on('playerMoved', (playerInfo) => {
-    if (remotePlayers[playerInfo.id]) {
-        remotePlayers[playerInfo.id].x = playerInfo.x;
-        remotePlayers[playerInfo.id].y = playerInfo.y;
-    }
-});
-
-socket.on('playerDisconnected', (id) => {
-    delete remotePlayers[id];
-});
-
-const joystick = document.getElementById('joystick-zone');
-joystick.addEventListener('touchstart', (e) => {
-    touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-});
-
-joystick.addEventListener('touchmove', (e) => {
-    if (!touchStart || !localPlayer) return;
-    const dx = e.touches[0].clientX - touchStart.x;
-    const dy = e.touches[0].clientY - touchStart.y;
-    const distance = Math.min(Math.sqrt(dx*dx + dy*dy), 50);
-    const angle = Math.atan2(dy, dx);
-    
-    movementVector.x = Math.cos(angle) * (distance / 10);
-    movementVector.y = Math.sin(angle) * (distance / 10);
-});
-
-joystick.addEventListener('touchend', () => {
-    touchStart = null;
-    movementVector = { x: 0, y: 0 };
-});
-
-function changeWeapon(type) {
-    if (localPlayer) {
-        localPlayer.weapon = type;
-        teamInfo.textContent = `Team: ${localPlayer.team} | Weapon: ${localPlayer.weapon}`;
-    }
-}
-
-function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    if (localPlayer && (movementVector.x !== 0 || movementVector.y !== 0)) {
-        localPlayer.x = Math.max(20, Math.min(canvas.width - 20, localPlayer.x + movementVector.x));
-        localPlayer.y = Math.max(20, Math.min(canvas.height - 20, localPlayer.y + movementVector.y));
-        socket.emit('playerMovement', { x: localPlayer.x, y: localPlayer.y });
-    }
-
-    // MRAP Obstacle
-    ctx.fillStyle = '#8b7355';
-    ctx.fillRect(canvas.width / 2 - 40, canvas.height / 2 - 25, 80, 50);
-    ctx.fillStyle = '#fff';
-    ctx.font = '12px Arial';
-    ctx.fillText("MRAP", canvas.width / 2 - 18, canvas.height / 2 + 5);
-
-    // Local Player
-    if (localPlayer) {
-        ctx.fillStyle = localPlayer.team === 'Alfa' ? '#3399ff' : '#ff3333';
-        ctx.beginPath();
-        ctx.arc(localPlayer.x, localPlayer.y, 12, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.fillStyle = '#ffffff';
-        ctx.fillText(`You (${localPlayer.weapon})`, localPlayer.x - 20, localPlayer.y - 20);
-    }
-
-    // Others
-    Object.keys(remotePlayers).forEach((id) => {
-        const rp = remotePlayers[id];
-        ctx.fillStyle = rp.team === 'Alfa' ? '#3399ff' : '#ff3333';
-        ctx.beginPath();
-        ctx.arc(rp.x, rp.y, 12, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.fillStyle = '#aaaaaa';
-        ctx.fillText(rp.team, rp.x - 15, rp.y - 20);
-    });
-
-    requestAnimationFrame(gameLoop);
-}
-
-gameLoop();
-EOF
-
+python ~/portfolio/webhook_listener.py
+exit
+# 1. Force kill any old hanging processes on port 8158
+fuser -k 8158/tcp
+# 2. Hard navigate to your home service project directory
+cd /files/home/attat-services/
+# 3. Boot up the Python server freshly on your port
+python3 -m http.server 8158
+pwd && ls -F
+cd attat-services
+python3 -m http.server 8158
+# 1. Stop the current server session
+Ctrl + C
+# 2. Kill any hidden background port activity
+fuser -k 8158/tcp
+# 3. Double check that app.html is sitting ready in your folder
+ls
+# 4. Fire up the Python server again
+python3 -m http.server 8158
+ls -la
+# 1. Kill any active instance running on port 8158
+fuser -k 8158/tcp
+# 2. Make sure you are inside the correct project folder
+cd $HOME/attat-services/
+# 3. Double check your file is there
+ls index.html
+# 4. Start up the Python web engine
+python3 -m http.server 8158
+# 1. Ensure you are in your project root
+cd $HOME/attat-services/
+# 2. Create the assets structure all at once
+mkdir -p assets/css assets/images
+# 3. Initialize Git for version control tracking
+git init
+# 4. Check your setup structure to confirm everything is in place
+ls -F
+ls
+python3 -m http.server 8158
+exit
+# 1. Kill any current server instance on port 8158
+fuser -k 8158/tcp
+# 2. Change directory back to your Home Service directory
+cd $HOME/attat-services/
+# 3. Fire the Python web engine back up
+python3 -m http.server 8158
+# Update your local packages and pull down Flask instantly
+pkg update -y
+pip install flask
+touch server.py
+import random
+from flask import Flask, request, jsonify, send_from_directory
+app = Flask(__name__)
+# Simulated in-memory secure datastore to track issued tokens
+active_sessions = {}
+# 1. Route to serve your untouched index.html front-end interface automatically
+@app.route('/')
+def serve_frontend():
+# 2. Live API endpoint triggered when "Proceed to Secure Verification" is tapped
+@app.route('/api/request-otp', methods=['POST'])
+def request_otp():
+# 3. Live API endpoint to match and finalize the user's entered OTP
+@app.route('/api/verify-otp', methods=['POST'])
+def verify_otp():
+if __name__ == '__main__':
+    print("\n🚀 Attat AGHS Production Server Firing Up...")
+python3 server.py
+ls
+python3 server.py
+npm install twilio express
 node server.js
+pip install flask twilio
+python server.py
+python server.py.
+python server.py
+exit
+cd ~/attat-services
+python server.py
+exit
+cd ~/attat-services
+python server.py
+mkdir -p templates
+mv index.html templates/
+ls templates
+python server.py
+exit
+cd/~/attat-services
+python server.py
+exit
+cd ~/attat-services
+python server.py
+exit
+cd ~/attat-services
+ls
+mkdir -p templates static
+mv index.html templates/ 2>/dev/null
+mv style.css static/ 2>/dev/null
+nano templates/index.html
+nano static/style.css
+python server.py
+exit
+STR=Setup\ storage;DOA="Setup 'draw over apps' (Press ENTER)";IBO="Setup 'ignore battery optimizations' (Press ENTER)";SBP="Setup & Background pop-ups permissions";ALE="Setup 'allow-external-apps'";ICL=Install\ Clang;ACT=android.settings;PKG=package:com.termux;PT=~/.termux/termux.properties;echo $STR;termux-setup-storage;read -p "$DOA";am start -a $ACT.action.MANAGE_OVERLAY_PERMISSION -d $PKG > /dev/null;read -p "$IBO";am start -a $ACT.IGNORE_BATTERY_OPTIMIZATION_SETTINGS > /dev/null;read -p "$SBP";am start -a $ACT.APPLICATION_DETAILS_SETTINGS -d $PKG > /dev/null;echo $ALE;if [ -f $PT ];then awk '/^#/{print;next }/^\s*allow-external-apps/{gsub(/allow-external-apps.*/,"allow-external-apps=true");found=1}{print $0}END{if(!found)print "allow-external-apps=true"}' $PT > "$TMPDIR/a.tmp" && mv "$TMPDIR/a.tmp" $PT;else mkdir -p $(dirname $PT);echo 'allow-external-apps=true' > $PT;fi;echo $ICL;pkg i clang -y;apt autoremove --purge;apt clean;echo ok
+exit
+cd ~/Attat-services
+cd ~/attat-services
+python sercer.py
+python server.py
+exit
+pkg update && pkg upgrade
+termux-install-storage
+cd ~/archery-folder
+ls
+cd ~/projects
+exit
+pkg update && pkg upgrade
+termux-setup-storage
+cd ~/Grahm's-projects
+ls
+y
+pwd
+exit
+exit
+pkg update && pkg upgrade
+exit
+pkg upgrade && pkg update
+pkg install python git
+git clone https://github.com/sundowndev/phoneinfoga.git
+exit
+# Update package repositories
+pkg update && pkg upgrade -y
+# Install Node.js and Git
+pkg install nodejs git -y
+# Verify installation
+node -v
+npm -v
+# Create and enter directory
+mkdir hyat-views
+cd hyat-views
+# Initialize Node.js project
+npm init -y
+npm install express cors
+nano server.js
+node server.js
+exit
+cd ~/hyat-views
+ls
+nano index.html
+nano style.css
+nano app.js
+nano server.js
+nano index.html
+cd hyat-views
+node server.js
+exit
+cd hyat-views
+node server.js
+exit
+pkill -f node
+clear
+cd ~/hyat-views
+ls -l
+node server.js
+mv index_html index.html
+ls -l
+nano server.js
+ls -1
+nano server.js
+nano index.html
+nano style.css
+nano server.js
+nano app.js
+node server.js
+nano server.js
+node server.js
+nano index.html
+node server.js
+nano server.js
+pkill -f node
+node server.js
+nano style.css
+nano index.html
+nano app.js
+nano style.css
+nano index.html
+pkill -f node
+node server.js
+nano style.css
+node server.js
+nano app.js
+pkill -f node
+node server.js
+nano style.css
+pkill -f node
+node server.js
+nano server.js
+pkill -f node
+node server.js
+nano index.html
+pkill -f node
+node server.js
+nano index.html
+nano app.js
+pkill -f node
+node server.js
+nano index.html
+pkill -f node
+node server.js
+nano style.css
+nano app.js
+nano read.md
+node server.js
+pkill -f node && node server.js
+node server.js
+git init
+git add .
+git commit -m "Initial release: Hyæt Views v1.0 complete security suite"
+ls -la server.js index.html style.css app.js README.md
+node -c server.js
+pkill -f node && node server.js
+node server.js
+nano app.js
+exit
