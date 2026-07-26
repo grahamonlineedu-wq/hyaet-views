@@ -1,0 +1,63 @@
+{
+  "scan_logs": [
+    {
+      "url": "http://192.168.1.1/login-verify-account.xyz",
+      "status": "HIGH RISK",
+      "reputationScore": 20,
+      "threatCount": 4,
+      "threatDetails": [
+        "Uses raw IP address instead of domain name.",
+        "Contains suspicious keyword(s) in URL path: [login, verify, account]"
+      ],
+      "sslInfo": {
+        "valid": false,
+        "reason": "Raw IP address or empty host (No SSL certificate)"
+      },
+      "timestamp": "2026-07-26T03:54:52.557Z"
+    },
+    {
+      "url": "https://www.wikipedia.org",
+      "status": "CLEAN",
+      "reputationScore": 100,
+      "threatCount": 0,
+      "threatDetails": [],
+      "sslInfo": {
+        "valid": true,
+        "issuer": "Let's Encrypt",
+        "validTo": "Sep  4 20:06:43 2026 GMT",
+        "reason": "Valid SSL/TLS Certificate"
+      },
+      "timestamp": "2026-07-26T03:54:31.911Z"
+    },
+    {
+      "url": "https://www.wikipedia.org",
+      "status": "CLEAN",
+      "reputationScore": 100,
+      "threatCount": 0,
+      "threatDetails": [],
+      "sslInfo": {
+        "valid": true,
+        "issuer": "Let's Encrypt",
+        "validTo": "Sep  4 20:06:43 2026 GMT",
+        "reason": "Valid SSL/TLS Certificate"
+      },
+      "timestamp": "2026-07-26T03:54:06.987Z"
+    },
+    {
+      "url": "http://192.168.1.1/login-verify-account.xyz",
+      "status": "HIGH RISK",
+      "reputationScore": 20,
+      "threatCount": 4,
+      "threatDetails": [
+        "Uses raw IP address instead of domain name.",
+        "Contains suspicious keyword(s) in URL path: [login, verify, account]"
+      ],
+      "sslInfo": {
+        "valid": false,
+        "reason": "Raw IP address or empty host (No SSL certificate)"
+      },
+      "timestamp": "2026-07-26T03:53:27.964Z"
+    }
+  ],
+  "custom_rules": []
+}

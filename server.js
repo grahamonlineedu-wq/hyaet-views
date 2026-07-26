@@ -1,47 +1,43 @@
 const express = require('express');
 const path = require('path');
-const https = require('https');
 const tls = require('tls');
-const Database = require('better-sqlite3');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const DB_FILE = path.join(__dirname, 'hyaet_db.json');
 
-// Initialize SQLite Database
-const db = new Database('hyaet_views.db');
-db.exec(`
-  CREATE TABLE IF NOT EXISTS scan_logs (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    url TEXT NOT NULL,
-    status TEXT NOT NULL,
-    score INTEGER NOT NULL,
-    threat_count INTEGER NOT NULL,
-    threat_details TEXT,
-    ssl_valid INTEGER,
-    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
-  );
+// Initialize local JSON storage if not present
+if (!fs.existsSync(DB_FILE)) {
+  fs.writeFileSync(DB_FILE, JSON.stringify({ scan_logs: [], custom_rules: [] }, null, 2));
+}
 
-  CREATE TABLE IF NOT EXISTS custom_rules (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    type TEXT NOT NULL, -- 'WHITELIST' or 'BLACKLIST_KEYWORD'
-    value TEXT UNIQUE NOT NULL
-  );
-`);
+function readDb() {
+  try {
+    return JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
+  } catch (err) {
+    return { scan_logs: [], custom_rules: [] };
+  }
+}
+
+function writeDb(data) {
+  fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
+}
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
-// API Key Middleware for programmatic access
+// API Key Middleware
 const API_KEY = "hyaet_sec_secret_key_2026";
-const authenticateApiKey = (req, res, next) => {
-  const apiKey = req.headers['x-api-key'];
-  if (req.path.startsWith('/api/v1/') && apiKey !== API_KEY) {
-    return res.status(401).json({ error: 'Unauthorized: Invalid or missing X-API-KEY header.' });
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api/v1/')) {
+    const apiKey = req.headers['x-api-key'];
+    if (apiKey !== API_KEY) {
+      return res.status(401).json({ error: 'Unauthorized: Invalid or missing X-API-KEY header.' });
+    }
   }
   next();
-};
-
-app.use(authenticateApiKey);
+});
 
 // SSL Inspection Helper
 function checkSSLCertificate(hostname) {
@@ -75,7 +71,8 @@ function checkSSLCertificate(hostname) {
 
 // Custom Rules Engine Helper
 function checkCustomRules(parsedUrl) {
-  const rules = db.prepare('SELECT * FROM custom_rules').all();
+  const db = readDb();
+  const rules = db.custom_rules || [];
   const hostname = parsedUrl.hostname.toLowerCase();
   const fullUrl = parsedUrl.href.toLowerCase();
 
@@ -91,7 +88,7 @@ function checkCustomRules(parsedUrl) {
   return { whitelisted: false, customFlags: customBlacklistMatches };
 }
 
-// Hybrid Core Scanner
+// Core Scanner
 async function performScan(targetUrl) {
   let reputationScore = 100;
   let threatCount = 0;
@@ -116,7 +113,7 @@ async function performScan(targetUrl) {
     };
   }
 
-  // Check Custom Rules First
+  // Custom Rules Check
   const customRuleResult = checkCustomRules(parsed);
   if (customRuleResult.whitelisted) {
     return {
@@ -137,15 +134,13 @@ async function performScan(targetUrl) {
     });
   }
 
-  // Rule 1: Raw IP Hostname Check
-  const ipPattern = /^(\d{1,3}\.){3}\d{1,3}$/;
-  if (ipPattern.test(parsed.hostname)) {
+  // Heuristics Checks
+  if (/^(\d{1,3}\.){3}\d{1,3}$/.test(parsed.hostname)) {
     reputationScore -= 35;
     threatCount++;
     threatDetails.push('Uses raw IP address instead of domain name.');
   }
 
-  // Rule 2: High-Risk TLD Check
   const riskyTLDs = ['.zip', '.mov', '.top', '.xyz', '.work', '.kim', '.gq', '.tk'];
   if (riskyTLDs.some(tld => parsed.hostname.endsWith(tld))) {
     reputationScore -= 25;
@@ -153,7 +148,6 @@ async function performScan(targetUrl) {
     threatDetails.push('Uses high-risk top-level domain (TLD) commonly associated with abuse.');
   }
 
-  // Rule 3: Phishing Keyword Matcher
   const suspiciousKeywords = ['login', 'verify', 'update', 'account', 'banking', 'secure', 'wallet', 'credential'];
   const matches = suspiciousKeywords.filter(keyword => parsed.href.toLowerCase().includes(keyword));
   if (matches.length > 0) {
@@ -162,15 +156,13 @@ async function performScan(targetUrl) {
     threatDetails.push(`Contains suspicious keyword(s) in URL path: [${matches.join(', ')}]`);
   }
 
-  // Rule 4: Subdomain Nesting Depth Check
-  const domainParts = parsed.hostname.split('.');
-  if (domainParts.length > 4) {
+  if (parsed.hostname.split('.').length > 4) {
     reputationScore -= 20;
     threatCount++;
     threatDetails.push('Excessive subdomain nesting depth detected.');
   }
 
-  // SSL Inspection
+  // SSL Certificate Check
   const sslInfo = await checkSSLCertificate(parsed.hostname);
   if (!sslInfo.valid && parsed.protocol === 'https:') {
     reputationScore -= 20;
@@ -178,7 +170,7 @@ async function performScan(targetUrl) {
     threatDetails.push(`SSL/TLS Inspection Issue: ${sslInfo.reason}`);
   }
 
-  // Live Threat DB Lookup (URLHaus API)
+  // Live Threat DB Query
   try {
     const apiResponse = await fetch('https://urlhaus-api.abuse.ch/v1/url/', {
       method: 'POST',
@@ -192,9 +184,7 @@ async function performScan(targetUrl) {
       threatCount++;
       threatDetails.push(`[URLHaus Intelligence] Flagged as ACTIVE MALWARE host (${apiData.threat || 'Malicious'})`);
     }
-  } catch (err) {
-    // Graceful fallback if threat intelligence API is unreachable
-  }
+  } catch (err) {}
 
   reputationScore = Math.max(0, reputationScore);
   let status = 'CLEAN';
@@ -207,20 +197,20 @@ async function performScan(targetUrl) {
     reputationScore,
     threatCount,
     threatDetails,
-    sslInfo
+    sslInfo,
+    timestamp: new Date().toISOString()
   };
 
-  // Persist to SQLite
-  const stmt = db.prepare(`
-    INSERT INTO scan_logs (url, status, score, threat_count, threat_details, ssl_valid)
-    VALUES (?, ?, ?, ?, ?, ?)
-  `);
-  stmt.run(normalizedUrl, status, reputationScore, threatCount, JSON.stringify(threatDetails), sslInfo.valid ? 1 : 0);
+  // Persist Scan Log
+  const db = readDb();
+  db.scan_logs.unshift(scanPayload);
+  if (db.scan_logs.length > 50) db.scan_logs.pop();
+  writeDb(db);
 
   return scanPayload;
 }
 
-// UI & REST API Routes
+// Routes
 app.post('/api/scan', async (req, res) => {
   const { url } = req.body;
   if (!url) return res.status(400).json({ error: 'URL parameter is required.' });
@@ -228,7 +218,6 @@ app.post('/api/scan', async (req, res) => {
   res.json(result);
 });
 
-// Programmatic REST API Endpoint v1 (API Key Required)
 app.post('/api/v1/scan', async (req, res) => {
   const { url } = req.body;
   if (!url) return res.status(400).json({ error: 'URL parameter is required.' });
@@ -236,39 +225,29 @@ app.post('/api/v1/scan', async (req, res) => {
   res.json({ api_version: '1.0', ...result });
 });
 
-// Custom Rules Endpoints
 app.get('/api/rules', (req, res) => {
-  const rules = db.prepare('SELECT * FROM custom_rules').all();
-  res.json(rules);
+  const db = readDb();
+  res.json(db.custom_rules || []);
 });
 
 app.post('/api/rules', (req, res) => {
   const { type, value } = req.body;
   if (!type || !value) return res.status(400).json({ error: 'Type and Value required.' });
-  try {
-    const stmt = db.prepare('INSERT INTO custom_rules (type, value) VALUES (?, ?)');
-    stmt.run(type, value.trim());
-    res.json({ success: true });
-  } catch (err) {
-    res.status(400).json({ error: 'Rule already exists or invalid.' });
-  }
-});
-
-app.delete('/api/rules/:id', (req, res) => {
-  const stmt = db.prepare('DELETE FROM custom_rules WHERE id = ?');
-  stmt.run(req.params.id);
+  const db = readDb();
+  const id = Date.now();
+  db.custom_rules.push({ id, type, value: value.trim() });
+  writeDb(db);
   res.json({ success: true });
 });
 
-// Analytics Endpoint
-app.get('/api/analytics', (req, res) => {
-  const totalScans = db.prepare('SELECT COUNT(*) as count FROM scan_logs').get().count;
-  const highRiskCount = db.prepare("SELECT COUNT(*) as count FROM scan_logs WHERE status = 'HIGH RISK'").get().count;
-  const rulesCount = db.prepare('SELECT COUNT(*) as count FROM custom_rules').get().count;
-  res.json({ totalScans, highRiskCount, rulesCount });
+app.delete('/api/rules/:id', (req, res) => {
+  const db = readDb();
+  db.custom_rules = db.custom_rules.filter(r => r.id != req.params.id);
+  writeDb(db);
+  res.json({ success: true });
 });
 
 app.listen(PORT, () => {
-  console.log(`Hyæt Views v2.0 active on http://localhost:${PORT}`);
+  console.log(`Hyæt Views v2.0 server active at http://localhost:${PORT}`);
 });
 
