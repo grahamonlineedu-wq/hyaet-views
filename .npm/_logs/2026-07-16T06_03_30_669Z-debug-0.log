@@ -1,0 +1,41 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.18.0
+2 info using node@v26.4.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/storage/emulated/0/archery-3d-game/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-07-16T06_03_30_669Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-07-16T06_03_30_669Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly allow-scripts no package.json at prefix Could not read package.json: Error: ENOENT: no such file or directory, open '/storage/emulated/0/archery-3d-game/package.json'
+13 silly packumentCache heap:1047527424 maxSize:261881856 maxEntrySize:130940928
+14 silly logfile done cleaning log files
+15 silly idealTree buildDeps
+16 silly reify moves {}
+17 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open '/storage/emulated/0/archery-3d-game/package.json'
+17 verbose stack     at async open (node:internal/fs/promises:1360:25)
+17 verbose stack     at async readFile (node:internal/fs/promises:2149:14)
+17 verbose stack     at async read (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/read-package.js:9:18)
+17 verbose stack     at async PackageJson.load (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/index.js:131:31)
+17 verbose stack     at async PackageJson.normalize (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/index.js:117:5)
+17 verbose stack     at async runScript (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script.js:11:28)
+17 verbose stack     at async Install.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/commands/install.js:171:9)
+17 verbose stack     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:193:9)
+17 verbose stack     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:67:5)
+18 error code ENOENT
+19 error syscall open
+20 error path /storage/emulated/0/archery-3d-game/package.json
+21 error errno -2
+22 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/storage/emulated/0/archery-3d-game/package.json'
+23 error enoent This is related to npm not being able to find a file.
+23 error enoent
+24 verbose cwd /storage/emulated/0/archery-3d-game
+25 verbose os Linux 6.12.38-android16-5-abA075FXXS5CZF2-4k
+26 verbose node v26.4.0
+27 verbose npm  v11.18.0
+28 verbose exit -2
+29 verbose code -2
+30 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2026-07-16T06_03_30_669Z-debug-0.log
