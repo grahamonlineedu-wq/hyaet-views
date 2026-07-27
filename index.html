@@ -21,7 +21,7 @@
       </div>
 
       <!-- Single Scan Form -->
-      <form id="scan-form">
+      <form id="scan-form" class="input-group">
         <input type="text" id="scan-input" placeholder="Enter URL or IP address..." required />
         <button type="submit" id="scan-btn">Run Deep Scan</button>
       </form>
@@ -44,8 +44,7 @@
         </div>
         <div class="card">
           <h3>Threat Flags</h3>
-          <p id="threats-val" class="card-value">0</p>
-        </div>
+          <p id="threats-val" class="card-value">0</p>     
       </div>
 
       <!-- Export Action Controls -->
@@ -59,8 +58,8 @@
 
       <!-- Recent Scans History Section -->
       <section id="history-section" style="margin-top: 30px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-          <h2 style="color: var(--yellow-cyber); font-size: 1.1rem; letter-spacing: 0.5px;">RECENT SCANS</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;>
+       <h2 style="color: var(--accent-yellow);"> font-size: 1.1rem; letter-spacing: 0.5px;">RECENT SCANS</h2>
           <button id="clear-history-btn" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-muted); padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 0.8rem;">Clear Log</button>
         </div>
         <div id="history-list" style="display: flex; flex-direction: column; gap: 8px;">
