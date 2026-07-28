@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grahm's Tech Blog</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --primary-yellow: #ffcc00;
+      --accent-red: #ff3333;
+      --text-light: #ffffff;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-light);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      border-bottom: 3px solid var(--accent-red);
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      color: var(--primary-yellow);
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .badge {
+      background-color: var(--accent-red);
+      color: #fff;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border-radius: 2px;
+    }
+
+    .post-card {
+      background-color: var(--card-bg);
+      border-left: 5px solid var(--primary-yellow);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .post-title {
+      color: var(--primary-yellow);
+      margin-top: 0;
+    }
+
+    .post-summary {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .btn {
+      background-color: var(--accent-red);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
+
+    .btn:hover {
+      background-color: #e60000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Grahm's Tech Blog</h1>
+    <span class="badge">LIVE</span>
+  </header>
+
+  <main id="posts-container">
+    <div class="post-card">
+      <h2 class="post-title">Welcome to Grahm's Tech Space</h2>
+      <p class="post-summary">Your Express backend and MongoDB Atlas cluster are now fully functional and connected.</p>
+      <button class="btn">Read Article</button>
+    </div>
+  </main>
+
+  <script>
+    // Fetch live posts from backend
+    async function fetchPosts() {
+      try {
+        const res = await fetch('/api/posts');
+        const data = await res.json();
+        if (data.success && data.data.length > 0) {
+          const container = document.getElementById('posts-container');
+          container.innerHTML = data.data.map(post => `
+            <div class="post-card">
+              <h2 class="post-title">${post.title}</h2>
+              <p class="post-summary">${post.summary || post.content.substring(0, 100)}...</p>
+              <button class="btn">Read Article</button>
+            </div>
+          `).join('');
+        }
+      } catch (err) {
+        console.log('Using default static view');
+      }
+    }
+    fetchPosts();
+  </script>
+
+</body>
+</html>

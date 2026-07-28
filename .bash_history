@@ -1,107 +1,3 @@
-ssh-keygen -t ed25519 -C "your_email@example.com"
-exit
-pkg update && pkg upgrade -y
-pkg install git nano curl wget -y
-pkg install vim -y.
-pkg install git -y
-git config --global user.name "grahamonlineedu-wq"git config --global user.email "grahamonline.edu@gmail.com"ssh-keygen -t ed25519 -C "grahamonline.edu@gmail.com"
-ls
-ssh-keygen -t ed25519
-exit
-rm -rf ~/.ssh
-rm -rf ~/projects
-exit
-nano style.css
-nano main.js
-nano index.html
-npx serve
-exit
-mkdir ~/projects
-cd ~/projects
-git init
-git push
-gitpush
-nano index.html
-npm run dev
-ls
-npm run dev
-exit
-killall -9 node python 2>/dev/null
-rm -rf ~/projects
-mkdir ~/projects
-cd ~/projects
-nano index.html
-nano style.css
-nano main.js
-npm run dev
-exit
-killall -9 node python 2>/dev/null
-rm -rf ~/projects
-mkdir ~/projects
-cd ~/projects
-nano index.html
-nano style.css
-nano main.js
-python -m http.server 8000 --bind 127.0.0.1
-nano index.html
-python -m http.server 8000 --bind 127.0.0.1
-termux-wake-unlock
-exit
-package install tcdump
-tcdump -iwlan0-c 10
-exit
-pkg update && pkg upgrade
-termux-setup-storage
-pkg update && pkg upgrade
-termux-setup-storage
-ls
-cd <directory>
-git clone <repository-url>
-pkg install tcpdump
-tcpdump-iwlan0 -c 10
-exit
-pkg update && pkg upgrade
-termux-setup-storage
-y
-exit
-pkg update && pkg upgrade
-termux-setup-storage
-y
-exit
-cd /files/home/attat-services/
-python -m http.server 8158
-bg
-cd ~/projects
-ls
-nano index.html
-nano main.js
-nano style.css
-python -m http.server 8000 --bind 127.0.0.1
-# Move back to your main directory
-cd ~
-# Create a new folder for the service app
-mkdir attat-services
-# Navigate into it
-cd attat-services
-# 1. Make sure you are in the project folder
-cd ~/attat-services
-# 2. Initialize Git (industry standard for tracking code changes)
-git init
-# 3. Create a clean folder structure
-mkdir -p assets/css assets/js
-# 4. Create your core files
-touch index.html assets/css/style.css assets/js/app.js
-# 5. Verify everything is in place
-ls -R
-nano index.html
-nano assets/css/style.css
-nano assets/js/app.js
-git add .
-git commit -m "feat: initial commit for attat-services MVP prototype"
-8001
-cd ~/attat-services
-python -m http.server 8001 --bind 127.0.0.1
-git add .
 git commit -m "feat: completed working mvp with secure otp and tracker"
 termux-setup-storage
 rm -rf ~/storage
@@ -497,4 +393,108 @@ node -c server.js
 pkill -f node && node server.js
 node server.js
 nano app.js
+exit
+git add .
+git commit -m "Hyæt Views v2.0: Integrated SQLite DB, SSL Certificate Inspector, Custom Rules Engine, and REST API Key Middleware"
+curl -X POST http://localhost:3000/api/v1/scan -H "Content-Type: application/json" -H "X-API-KEY: hyaet_sec_secret_key_2026" -d '{"url":"https://www.wikipedia.org"}'
+node server.js
+npm install better-sqlite3 express
+pkill -9 node
+node server.js
+Hyæt Views v2.0 active on http://localhost:3000
+npm install express sqlite3
+nano server.js
+node server.js
+npm install express
+npm fund
+node server.js
+git add .
+git commit -m "Hyæt Views v2.0 fully functional with JSON persistence, SSL inspector, and rules engine"
+git remote add origin <your-github-repo-url>
+git branch -M main
+git push -u origin main
+pkill -f node
+exit
+cd ~/hyæt-views
+cd ~/hyat-view
+pkill -f node && node server.js
+ls -la server.js index.html style.css app.js README.md
+node -c server.js
+git add app.js
+git commit -m "Fix batch scan mode execution, clipboard fallback, and log clear handler"
+npm install better-sqlite3
+nano server.js
+nano index.html
+nano app.js
+pkill -f node && node server.js
+git add .
+git commit -m "Hyæt Views v2.0: Integrated SQLite DB, SSL Certificate Inspector, Custom Rules Engine, and REST API Key Middleware"
+pkill -f node
+exit
+pkill -f node
+node server.js
+cd ~/hyat-views
+node server.js
+nano index.html
+nano style.css
+nano server.js
+exit
+cd ~/hyat-views
+node server.js
+git remote add origin https://github.com/grahamonlineedu-wq/hyaet-views.git
+git branch -M main
+git push -u origin main
+exit
+/data/data/com.termux/files/usr/bin/hollywood 
+pkg install hollywood
+hollywood
+exit
+pkg install neofetch
+neofetch
+exit
+pkg install nmap
+nmap -sn 192.168.1.0/24
+nmap -p 1-65535 192.168.1.100
+nmap -sV 192.168.1.100
+nmap -O 192.168.1.100
+nmap --script vuln 192.168.1.100
+nmap -A 192.168.1.100
+nmap -oN scan_results.txt 192.168.1.100
+nmap -sP 192.168.1.0/24
+nmap -f 192.168.1.100
+exit
+termux-wifi-status
+termux-wifi-enable true
+exit
+cd ~/hyat-views
+node server.js
+cd ~/projects/hyaet-views
+node server.js
+nano index.html
+nano style.css
+nano server.js
+nano app.js
+node server.js
+nano style.css
+node server.js
+git add style.css
+git commit -m "Update full style.css with side-by-side grid and square scan button"
+git push origin main
+git remote set-url origin https://<YOUR_NEW_TOKEN>@github.com/grahamonlineedu-wq/hyaet-views.git
+git remote set-url origin https://<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>@github.com/grahamonlineedu-wq/hyaet-views.git
+git push origin main
+nano index.html
+nano server.js
+nano index.html
+git add index.html
+git commit -m "Fix CSS class names and variable references in HTML"
+git push origin main
+nano vercel.json
+git add vercel.json
+git commit -m "Add vercel.json configuration"
+git push origin main
+node server.js
+nano style.css
+nano index.html
+node server.js
 exit

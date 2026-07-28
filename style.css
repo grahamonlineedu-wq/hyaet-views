@@ -140,20 +140,36 @@ button:active {
   color: var(--danger-red);
   border: 1px solid var(--danger-red);
 }
-
-/* Results Display */
+/* Results Display Grid */
 .result-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
   margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 .result-item {
-  background-color: var(--bg-color);
+  flex: 1;
+  background-color: var(--card-bg);
   padding: 16px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.result-item label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.result-item span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 .result-item label {
