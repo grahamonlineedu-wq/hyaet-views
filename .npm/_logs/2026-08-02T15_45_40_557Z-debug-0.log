@@ -1,0 +1,166 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.18.0
+2 info using node@v26.4.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/grahms-blogsite/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install express mongoose dotenv cors bcryptjs jsonwebtoken
+8 verbose argv "install" "express" "mongoose" "dotenv" "cors" "bcryptjs" "jsonwebtoken"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-08-02T15_45_40_557Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-08-02T15_45_40_557Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:1047527424 maxSize:261881856 maxEntrySize:130940928
+14 silly idealTree buildDeps
+15 silly fetch manifest bcryptjs@^3.0.3
+16 silly packumentCache full:https://registry.npmjs.org/bcryptjs cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/bcryptjs 1419ms (cache revalidated)
+18 silly packumentCache full:https://registry.npmjs.org/bcryptjs set size:80385 disposed:false
+19 silly fetch manifest cors@^2.8.6
+20 silly packumentCache full:https://registry.npmjs.org/cors cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/cors 495ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmjs.org/cors set size:77956 disposed:false
+23 silly fetch manifest dotenv@^17.4.2
+24 silly packumentCache full:https://registry.npmjs.org/dotenv cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/dotenv 455ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmjs.org/dotenv set size:277802 disposed:false
+27 silly fetch manifest express@^5.2.1
+28 silly packumentCache full:https://registry.npmjs.org/express cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/express 330ms (cache revalidated)
+30 silly packumentCache full:https://registry.npmjs.org/express set size:804956 disposed:false
+31 silly fetch manifest jsonwebtoken@^9.0.3
+32 silly packumentCache full:https://registry.npmjs.org/jsonwebtoken cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/jsonwebtoken 382ms (cache revalidated)
+34 silly packumentCache full:https://registry.npmjs.org/jsonwebtoken set size:183413 disposed:false
+35 silly fetch manifest mongoose@^9.8.1
+36 silly packumentCache full:https://registry.npmjs.org/mongoose cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/mongoose 1360ms (cache updated)
+38 silly packumentCache full:https://registry.npmjs.org/mongoose set size:undefined disposed:false
+39 silly placeDep ROOT bcryptjs@3.0.3 REPLACE for: grahms-blogsite@1.0.0 want: ^3.0.3
+40 silly placeDep ROOT cors@2.8.6 REPLACE for: grahms-blogsite@1.0.0 want: ^2.8.6
+41 silly placeDep ROOT dotenv@17.4.2 REPLACE for: grahms-blogsite@1.0.0 want: ^17.4.2
+42 silly placeDep ROOT express@5.2.1 REPLACE for: grahms-blogsite@1.0.0 want: ^5.2.1
+43 silly placeDep ROOT jsonwebtoken@9.0.3 REPLACE for: grahms-blogsite@1.0.0 want: ^9.0.3
+44 silly placeDep ROOT mongoose@9.9.1 REPLACE for: grahms-blogsite@1.0.0 want: ^9.8.1
+45 silly reify mark retired [
+45 silly reify   '/data/data/com.termux/files/home/grahms-blogsite/node_modules/mongoose'
+45 silly reify ]
+46 silly reify moves {
+46 silly reify   '/data/data/com.termux/files/home/grahms-blogsite/node_modules/mongoose': '/data/data/com.termux/files/home/grahms-blogsite/node_modules/.mongoose-iS9xWYuB'
+46 silly reify }
+47 silly audit bulk request {
+47 silly audit   '@mongodb-js/saslprep': [ '1.4.13' ],
+47 silly audit   '@standard-schema/spec': [ '1.1.0' ],
+47 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+47 silly audit   '@types/whatwg-url': [ '13.0.0' ],
+47 silly audit   accepts: [ '2.0.0' ],
+47 silly audit   'body-parser': [ '2.3.0' ],
+47 silly audit   'content-type': [ '2.0.0', '1.0.5' ],
+47 silly audit   bson: [ '7.3.1' ],
+47 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+47 silly audit   bytes: [ '3.1.2' ],
+47 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+47 silly audit   'call-bound': [ '1.0.4' ],
+47 silly audit   'content-disposition': [ '1.1.0' ],
+47 silly audit   cookie: [ '0.7.2' ],
+47 silly audit   'cookie-signature': [ '1.2.2' ],
+47 silly audit   debug: [ '4.4.3' ],
+47 silly audit   depd: [ '2.0.0' ],
+47 silly audit   'dunder-proto': [ '1.0.1' ],
+47 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+47 silly audit   'ee-first': [ '1.1.1' ],
+47 silly audit   encodeurl: [ '2.0.0' ],
+47 silly audit   'es-define-property': [ '1.0.1' ],
+47 silly audit   'es-errors': [ '1.3.0' ],
+47 silly audit   'es-object-atoms': [ '1.1.2' ],
+47 silly audit   'escape-html': [ '1.0.3' ],
+47 silly audit   etag: [ '1.8.1' ],
+47 silly audit   finalhandler: [ '2.1.1' ],
+47 silly audit   forwarded: [ '0.2.0' ],
+47 silly audit   fresh: [ '2.0.0' ],
+47 silly audit   'function-bind': [ '1.1.2' ],
+47 silly audit   'get-intrinsic': [ '1.3.0' ],
+47 silly audit   'get-proto': [ '1.0.1' ],
+47 silly audit   gopd: [ '1.2.0' ],
+47 silly audit   'has-symbols': [ '1.1.0' ],
+47 silly audit   hasown: [ '2.0.4' ],
+47 silly audit   'http-errors': [ '2.0.1' ],
+47 silly audit   'iconv-lite': [ '0.7.3' ],
+47 silly audit   inherits: [ '2.0.4' ],
+47 silly audit   'ipaddr.js': [ '1.9.1' ],
+47 silly audit   'is-promise': [ '4.0.0' ],
+47 silly audit   jwa: [ '2.0.1' ],
+47 silly audit   jws: [ '4.0.1' ],
+47 silly audit   kareem: [ '3.3.0' ],
+47 silly audit   'lodash.includes': [ '4.3.0' ],
+47 silly audit   'lodash.isboolean': [ '3.0.3' ],
+47 silly audit   'lodash.isinteger': [ '4.0.4' ],
+47 silly audit   'lodash.isnumber': [ '3.0.3' ],
+47 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+47 silly audit   'lodash.isstring': [ '4.0.1' ],
+47 silly audit   'lodash.once': [ '4.1.1' ],
+47 silly audit   'math-intrinsics': [ '1.1.0' ],
+47 silly audit   'media-typer': [ '1.1.1' ],
+47 silly audit   'memory-pager': [ '1.5.0' ],
+47 silly audit   'merge-descriptors': [ '2.0.0' ],
+47 silly audit   'mime-db': [ '1.54.0' ],
+47 silly audit   'mime-types': [ '3.0.2' ],
+47 silly audit   mongodb: [ '7.5.0' ],
+47 silly audit   'mongodb-connection-string-url': [ '7.0.2' ],
+47 silly audit   mpath: [ '0.9.0' ],
+47 silly audit   mquery: [ '6.0.0' ],
+47 silly audit   ms: [ '2.1.3' ],
+47 silly audit   negotiator: [ '1.0.0' ],
+47 silly audit   'object-assign': [ '4.1.1' ],
+47 silly audit   'object-inspect': [ '1.13.4' ],
+47 silly audit   'on-finished': [ '2.4.1' ],
+47 silly audit   once: [ '1.4.0' ],
+47 silly audit   parseurl: [ '1.3.3' ],
+47 silly audit   'path-to-regexp': [ '8.4.2' ],
+47 silly audit   'proxy-addr': [ '2.0.7' ],
+47 silly audit   punycode: [ '2.3.1' ],
+47 silly audit   qs: [ '6.15.3' ],
+47 silly audit   'range-parser': [ '1.3.0' ],
+47 silly audit   'raw-body': [ '3.0.2' ],
+47 silly audit   router: [ '2.2.0' ],
+47 silly audit   'safe-buffer': [ '5.2.1' ],
+47 silly audit   'safer-buffer': [ '2.1.2' ],
+47 silly audit   semver: [ '7.8.5' ],
+47 silly audit   send: [ '1.2.1' ],
+47 silly audit   'serve-static': [ '2.2.1' ],
+47 silly audit   setprototypeof: [ '1.2.0' ],
+47 silly audit   'side-channel': [ '1.1.1' ],
+47 silly audit   'side-channel-list': [ '1.0.1' ],
+47 silly audit   'side-channel-map': [ '1.0.1' ],
+47 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+47 silly audit   sift: [ '17.1.3' ],
+47 silly audit   'sparse-bitfield': [ '3.0.3' ],
+47 silly audit   statuses: [ '2.0.2' ],
+47 silly audit   toidentifier: [ '1.0.1' ],
+47 silly audit   tr46: [ '5.1.1' ],
+47 silly audit   'type-is': [ '2.1.0' ],
+47 silly audit   unpipe: [ '1.0.0' ],
+47 silly audit   vary: [ '1.1.2' ],
+47 silly audit   'webidl-conversions': [ '7.0.0' ],
+47 silly audit   'whatwg-url': [ '14.2.0' ],
+47 silly audit   wrappy: [ '1.0.2' ],
+47 silly audit   bcryptjs: [ '3.0.3' ],
+47 silly audit   cors: [ '2.8.6' ],
+47 silly audit   dotenv: [ '17.4.2' ],
+47 silly audit   express: [ '5.2.1' ],
+47 silly audit   jsonwebtoken: [ '9.0.3' ],
+47 silly audit   mongoose: [ '9.9.1' ]
+47 silly audit }
+48 http cache mongoose@https://registry.npmjs.org/mongoose/-/mongoose-9.9.1.tgz 0ms (cache hit)
+49 silly tarball no local data for mongoose@https://registry.npmjs.org/mongoose/-/mongoose-9.9.1.tgz. Extracting by manifest.
+50 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 424ms
+51 silly audit report {}
+52 http fetch GET 200 https://registry.npmjs.org/mongoose/-/mongoose-9.9.1.tgz 1821ms (cache miss)
+53 silly CHANGE node_modules/mongoose
+54 verbose cwd /data/data/com.termux/files/home/grahms-blogsite
+55 verbose os Linux 6.12.38-android16-5-abA075FXXS6CZF6-4k
+56 verbose node v26.4.0
+57 verbose npm  v11.18.0
+58 verbose exit 0
+59 info ok

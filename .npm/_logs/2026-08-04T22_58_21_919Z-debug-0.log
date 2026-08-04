@@ -1,0 +1,42 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.19.0
+2 info using node@v26.4.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm init
+7 verbose argv "init" "--yes"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-08-04T22_58_21_919Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-08-04T22_58_21_919Z-debug-0.log
+10 silly logfile start cleaning logs, removing 2 files
+11 silly logfile done cleaning log files
+12 silly package data {
+12 silly package data   dependencies: { express: '^5.2.1' },
+12 silly package data   name: 'home',
+12 silly package data   version: '1.0.0',
+12 silly package data   description: '',
+12 silly package data   main: 'server.js',
+12 silly package data   devDependencies: {},
+12 silly package data   scripts: {
+12 silly package data     test: 'echo "Error: no test specified" && exit 1',
+12 silly package data     start: 'node server.js'
+12 silly package data   },
+12 silly package data   repository: {
+12 silly package data     type: 'git',
+12 silly package data     url: 'git+https://github.com/grahamonlineedu-wq/hyaet-views.git'
+12 silly package data   },
+12 silly package data   keywords: [],
+12 silly package data   author: '',
+12 silly package data   license: 'ISC',
+12 silly package data   type: 'commonjs',
+12 silly package data   bugs: { url: 'https://github.com/grahamonlineedu-wq/hyaet-views/issues' },
+12 silly package data   homepage: 'https://github.com/grahamonlineedu-wq/hyaet-views#readme',
+12 silly package data   Symbol(newline): '\n',
+12 silly package data   Symbol(indent): '  '
+12 silly package data }
+13 verbose cwd /data/data/com.termux/files/home
+14 verbose os Linux 6.12.38-android16-5-abA075FXXS6CZF6-4k
+15 verbose node v26.4.0
+16 verbose npm  v11.19.0
+17 verbose exit 0
+18 info ok

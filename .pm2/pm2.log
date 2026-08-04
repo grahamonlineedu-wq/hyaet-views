@@ -1,0 +1,1725 @@
+2026-08-02T17:09:36: PM2 log: ===============================================================================
+2026-08-02T17:09:36: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-08-02T17:09:36: PM2 log: Time                 : Sun Aug 02 2026 17:09:36 GMT+0100 (West Africa Time)
+2026-08-02T17:09:36: PM2 log: PM2 version          : 7.0.3
+2026-08-02T17:09:36: PM2 log: Node.js version      : 26.4.0
+2026-08-02T17:09:36: PM2 log: Current arch         : arm64
+2026-08-02T17:09:36: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-08-02T17:09:36: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-08-02T17:09:36: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-08-02T17:09:36: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-08-02T17:09:36: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-08-02T17:09:36: PM2 log: Worker Interval      : 30000
+2026-08-02T17:09:36: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-08-02T17:09:36: PM2 log: Concurrent actions   : 2
+2026-08-02T17:09:36: PM2 log: SIGTERM timeout      : 1600
+2026-08-02T17:09:36: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-08-02T17:09:36: PM2 log: ===============================================================================
+2026-08-02T17:09:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:09:36: PM2 error: Error while calling "getconf PAGESIZE" Error: Command failed: getconf PAGESIZE
+/data/data/com.termux/files/usr/bin/sh: 1: getconf: not found
+
+    at genericNodeError (node:internal/errors:998:15)
+    at wrappedFn (node:internal/errors:543:14)
+    at ChildProcess.exithandler (node:child_process:417:12)
+    at ChildProcess.emit (node:events:509:20)
+    at ChildProcess.emit (node:domain:536:15)
+    at maybeClose (node:internal/child_process:1125:16)
+    at Socket.<anonymous> (node:internal/child_process:497:11)
+    at Socket.emit (node:events:509:20)
+    at Socket.emit (node:domain:536:15)
+    at Pipe.<anonymous> (node:net:355:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'getconf PAGESIZE'
+}
+2026-08-02T17:09:36: PM2 error: Error while calling "getconf CLK_TCK" Error: Command failed: getconf CLK_TCK
+/data/data/com.termux/files/usr/bin/sh: 1: getconf: not found
+
+    at genericNodeError (node:internal/errors:998:15)
+    at wrappedFn (node:internal/errors:543:14)
+    at ChildProcess.exithandler (node:child_process:417:12)
+    at ChildProcess.emit (node:events:509:20)
+    at ChildProcess.emit (node:domain:536:15)
+    at maybeClose (node:internal/child_process:1125:16)
+    at Socket.<anonymous> (node:internal/child_process:497:11)
+    at Socket.emit (node:events:509:20)
+    at Socket.emit (node:domain:536:15)
+    at Pipe.<anonymous> (node:net:355:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'getconf CLK_TCK'
+}
+2026-08-02T17:09:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:55: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:55: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:55: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:09:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:09:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:09:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:02: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:02: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:04: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:04: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:10:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:28: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:28: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:30: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:30: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:30: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:32: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:32: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:32: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:34: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:34: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:34: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:36: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:47: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:10:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:10:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:10:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:04: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:04: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:11:08: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:08: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:08: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:10: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:10: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:10: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:12: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:12: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:12: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:17: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:17: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:17: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:19: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:19: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:19: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:21: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:21: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:21: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:26: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:26: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:28: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:28: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:30: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:30: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:30: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:32: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:32: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:32: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:11:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:51: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:51: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:51: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:55: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:55: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:55: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:11:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:11:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:11:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:12:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:26: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:26: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:28: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:28: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:12:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:55: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:55: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:55: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:12:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:12:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:12:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:02: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:02: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:04: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:04: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:13:08: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:08: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:08: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:15: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:15: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:15: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:30: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:30: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:30: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:32: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:32: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:32: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:34: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:34: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:34: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:36: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:13:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:55: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:55: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:55: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:13:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:13:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:13:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:02: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:02: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:04: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:04: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:14:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:30: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:30: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:30: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:14:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:58: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:14:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:14:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:14:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:15:08: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:08: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:08: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:15: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:15: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:15: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:19: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:19: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:19: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:21: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:21: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:21: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:30: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:30: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:30: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:32: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:32: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:32: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:34: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:34: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:34: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:36: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:15:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:15:58: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:15:58: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:15:58: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:16:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:26: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:26: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:16:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:51: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:51: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:51: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:16:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:16:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:16:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:17:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:08: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:08: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:08: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:10: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:10: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:10: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:12: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:12: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:12: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:17: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:17: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:17: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:19: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:19: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:19: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:21: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:21: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:21: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:17:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:17:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:17:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:17:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:18:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:15: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:15: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:15: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:17: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:17: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:17: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:19: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:19: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:19: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:26: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:26: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:28: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:18:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:51: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:51: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:51: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:18:58: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:18:58: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:18:58: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:02: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:02: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:04: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:04: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:19:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:19:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:47: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:51: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:51: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:51: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:55: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:55: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:55: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:19:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:19:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:19:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:20:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:21: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:21: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:21: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:20:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:20:58: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:20:58: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:20:58: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:21:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:12: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:12: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:12: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:21: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:21: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:21: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:34: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:34: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:34: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:36: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:21:36: PM2 error: Error caught while calling pidusage
+2026-08-02T17:21:36: PM2 error: Error: No matching pid found
+2026-08-02T17:21:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:55: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:55: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:55: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:21:58: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:21:58: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:21:58: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:02: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:02: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:04: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:04: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:22:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:09: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:11: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:11: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:11: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:15: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:15: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:15: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:17: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:17: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:17: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:26: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:26: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:28: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:28: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:30: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:30: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:30: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:32: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:32: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:32: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:34: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:34: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:34: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:36: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:22:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:47: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:22:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:22:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:22:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:23:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:08: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:08: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:08: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:10: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:10: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:10: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:12: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:12: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:12: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:19: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:19: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:19: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:21: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:21: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:21: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:28: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:28: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:30: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:30: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:30: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:32: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:32: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:32: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:34: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:34: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:34: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:36: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:23:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:47: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:48: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:48: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:48: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:50: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:55: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:55: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:55: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:57: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:57: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:57: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:23:59: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:23:59: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:23:59: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:01: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:01: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:05: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:05: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:05: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:24:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:08: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:08: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:08: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:10: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:10: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:10: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:12: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:12: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:12: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:15: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:15: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:15: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:17: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:17: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:17: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:19: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:19: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:19: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:21: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:21: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:21: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:26: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:26: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:28: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:28: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:28: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:24:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:44: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:44: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:44: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:46: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:46: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:46: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:47: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:51: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:51: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:51: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:24:58: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:24:58: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:24:58: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:01: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:02: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:03: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:03: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:03: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:06: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:06: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:06: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:25:09: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:09: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:10: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:13: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:13: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:13: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:15: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:15: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:22: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:22: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:22: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:24: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:24: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:24: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:26: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:26: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:26: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:32: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:32: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:32: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:34: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:34: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:34: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:36: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:36: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:36: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:25:38: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:38: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:38: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:40: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:40: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:40: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:42: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:42: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:42: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:47: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:50: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:50: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:51: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:52: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:52: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:52: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:54: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:54: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:54: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:56: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:56: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:56: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:25:58: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:25:58: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:25:58: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:00: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:00: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:00: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:02: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:02: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:02: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:04: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:04: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:04: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:06: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:26:07: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:07: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:07: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:08: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:08: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:08: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:10: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:10: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:10: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:12: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:12: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:12: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:14: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:14: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:14: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:16: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:16: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:16: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:18: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:18: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:18: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:20: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:20: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:20: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:23: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:23: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:23: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:25: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:25: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:25: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:27: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:27: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:27: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:29: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:29: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:29: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:31: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:31: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:31: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:33: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:33: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:33: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:35: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:35: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:35: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:36: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:26:37: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:37: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:37: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:39: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:39: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:39: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:41: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:41: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:41: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:43: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:43: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:43: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:45: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:45: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:45: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:47: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:47: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:47: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:49: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:49: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:49: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:51: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:51: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:51: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:53: PM2 log: App [grahms-blog:0] exited with code [1] via signal [SIGINT]
+2026-08-02T17:26:53: PM2 log: App [grahms-blog:0] starting in -fork mode-
+2026-08-02T17:26:53: PM2 log: App [grahms-blog:0] online
+2026-08-02T17:26:54: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-08-02T17:26:54: PM2 log: Stopping app:grahms-blog id:0
+2026-08-02T17:26:54: PM2 log: App [grahms-blog:0] exited with code [0] via signal [SIGINT]
+2026-08-02T17:26:54: PM2 log: pid=22454 msg=process tree killed (1 pids)
+2026-08-02T17:26:54: PM2 log: PM2 successfully stopped

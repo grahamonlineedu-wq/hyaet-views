@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grahms - Vendor AI Verification Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="portal-container">
+    <header class="navbar">
+      <div class="logo">Grahms <span>Vendor Hub</span></div>
+      <div class="user-badge">🛡️ Verified Seller</div>
+    </header>
+
+    <main class="content">
+      <section class="card upload-card">
+        <h2>Submit Product for AI Verification</h2>
+        <p class="subtitle">Upload physical inventory proof to activate group buy pricing.</p>
+
+        <form id="verificationForm">
+          <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" placeholder="e.g. iPhone 15 Pro Max 256GB" required>
+          </div>
+
+          <div class="form-group">
+            <label for="retailPrice">Original Retail Price (₦)</label>
+            <input type="number" id="retailPrice" placeholder="950000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="groupPrice">Group Buying Deal Price (₦)</label>
+            <input type="number" id="groupPrice" placeholder="850000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inventoryProof">Physical Video/Image Proof</label>
+            <input type="file" id="inventoryProof" accept="image/*,video/*" required>
+          </div>
+
+          <button type="submit" class="btn-primary">Submit to Nayan Engine</button>
+        </form>
+      </section>
+
+      <section class="card status-card">
+        <h2>Active Listings Status</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Group Discount</th>
+              <th>Escrow Status</th>
+              <th>AI Verification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>iPhone 15 Pro</td>
+              <td>10.5% OFF</td>
+              <td><span class="badge badge-locked">🔒 ₦1.7M Locked</span></td>
+              <td><span class="badge badge-verified">✓ PASSED</span></td>
+            </tr>
+            <tr>
+              <td>Samsung S24</td>
+              <td>12.1% OFF</td>
+              <td><span class="badge badge-pending">⏳ Pending Hub</span></td>
+              <td><span class="badge badge-verified">✓ PASSED</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+

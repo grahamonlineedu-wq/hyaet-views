@@ -1,500 +1,500 @@
-git commit -m "feat: completed working mvp with secure otp and tracker"
-termux-setup-storage
-rm -rf ~/storage
-termux-setup-storage
-ln -s ~/attat-services ~/storage/shared/Documents/attat-services
-python -m http.server 8001 --bind 127.0.0.1
-cd ~/attat-services
-python -m http.server 8001 --bind 127.0.0.1
-ls
-ls -R
-ls -R ~/projects
-ls -d ~/projects ~/attat-services 2>/dev/null
-python -m http.server 8001 --bind 127.0.0.1
-let selectedServiceType = "";
-let generatedOTP = "";
-// --- STATE MEMORY MANAGEMENT ---
-// Save the current app state to local storage
-function saveAppState(state, details = {}) {
-pkg && pkg update
-termux-setup-storage
-ls
-exit
-pkg upgrade && pkg update
-exit
-pkg update && pkg upgrade
-exit
-pkg install git python python-pip -y
-git clone https://github.com/sundowndev/phoneinfoga.git
-cd phoneinfoga
-git clone https://github.com/sherlock-project/sherlock.git
-cd sherlock
-git clone https://github.com/iojw/socialscan.git
-cd socialscan
-pip install -r requirements.txt
-pip install .
-pip install socialscan
-socialscan target - 1owolorichy@gmail.com
-cd ..
-pip install -r requirements.txt
-python sherlock.py 1owolorichy
-cd sherlock
-pip install -r requirements.txt
-python sherlock.py 1owolorichy
-pkg install python git
-exit
-pkg update && pkg upgrade
-pkg install python git
-git clone https://github.com/sundowndev/phoneinfoga.git
-cd phoneinfoga
-pip install -r requirements.txt
-exit
-# Go to your home directory
-cd ~
-# Create a structured OSINT directory
-mkdir -p OSINT/tools OSINT/projects OSINT/reports
-# Navigate into your tools directory
-cd OSINT/tools
-# Use 'sudo apt install' on Linux or 'pkg install' on Termux
-pkg install git python python-pip curl wget libxslt libxml2 -y
-git clone https://github.com/sherlock-project/sherlock.git
-cd sherlock && pip install -r requirements.txt && cd ..
-git clone https://github.com/laramies/theHarvester.git
-cd theHarvester && pip install -r requirements.txt && cd ..
-pip install holehe
-sudo apt install tor proxychains -y
-pip3 install holehe
-target1owolorichy@gmail.com
-pkg install python python-pip -y
-python -m holehe 1owolorichy@gmail.com
-holehe 1owolorichy@gmail.com
-holehe --only-used 1owolorichy@gmail.com
-pip install ghunt
-ghunt login
-ghunt email 1owolorichy@gmail.com
-cd ~/phoneinfoga/sherlock/sherlock
-python sherlock.py 1owolorichy
-# 1. Install the pre-compiled numpy binary directly from Termux
-pkg install python-numpy -y
-# 1. Jump straight into your correct Sherlock folder
-cd ~/OSINT/tools/sherlock/sherlock
-# 2. Run your handle tracking tool
-python sherlock.py 1owolorichy
-pip install ghunt
-exit
-FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-brew install corelocationcli
-CoreLocationCLI --watch --json
-Get Current Location
-Get Contents of URL
-termux-location -p gps -r once
-pkg install python -y
-mkdir ~/portfolio && cd ~/portfolio
-echo "<h1>My Personal Portfolio under development</h1>" > index.html
-python -m http.server 8080
-exit
-cat << 'EOF' > ~/portfolio/webhook_listener.py
-import json
-from http.server import BaseHTTPRequestHandler, HTTPServer
+      --accent-hover: #0284c7;
+    }
 
-class WebhookHandler(BaseHTTPRequestHandler):
-    def do_POST(self):
-        # Read the length of the incoming alert data
-        content_length = int(self.headers['Content-Length'])
-        post_data = self.rfile.read(content_length)
-        
-        # Parse the JSON payload from Canarytokens
-        try:
-            alert_payload = json.loads(post_data.decode('utf-8'))
-            print("\n[!] ALERT: Canarytoken Triggered!")
-            print(json.dumps(alert_payload, indent=4))
-        except Exception as e:
-            print(f"\n[!] Received non-JSON or malformed payload: {e}")
-            print(post_data.decode('utf-8'))
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-        # Send a 200 OK response back to the Canarytoken server
-        self.send_response(200)
-        self.send_header('Content-Type', 'application/json')
-        self.end_headers()
-        self.wfile.write(b'{"status":"success"}')
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-def run(port=9090):
-    server_address = ('', port)
-    httpd = HTTPServer(server_address, WebhookHandler)
-    print(f"[*] Local Webhook Listener running on port {port}...")
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        print("\n[*] Shutting down listener.")
-        httpd.server_close()
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
-if __name__ == '__main__':
-    run()
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .admin-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .admin-link:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    .hero {
+      padding: 40px 0 20px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.8px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Turnkey AdSense Slot Header */
+    .ad-slot {
+      background: rgba(51, 65, 85, 0.3);
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin: 25px 0;
+    }
+
+    .posts-grid {
+      display: grid;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .post-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .post-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .post-title {
+      margin: 0 0 10px 0;
+      font-size: 1.4rem;
+    }
+
+    .post-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .post-excerpt {
+      color: #cbd5e1;
+      font-size: 0.98rem;
+    }
+
+    /* Affiliate Callout Box Component */
+    .affiliate-box {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .affiliate-box h3 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    .affiliate-box p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .affiliate-btn {
+      align-self: flex-start;
+      background: var(--accent);
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+      padding: 30px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-flex">
+      <a href="/" class="logo">hyæt-views</a>
+      <a href="/admin.html" class="admin-link">Manage Site</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Engineering & Digital Growth</h1>
+      <p>Exploring modern software development, web frameworks, and digital architecture.</p>
+    </section>
+
+    <!-- Turnkey Ad Placement Slot for Buyers -->
+    <div class="ad-slot">
+      <span>[ Monetization Slot: Responsive Google AdSense Banner ]</span>
+    </div>
+
+    <!-- Dynamic Posts Container -->
+    <div id="posts-container" class="posts-grid">
+      <p style="text-align: center; color: var(--muted);">Loading articles...</p>
+    </div>
+
+    <!-- Turnkey Affiliate Callout Box -->
+    <div class="affiliate-box">
+      <h3>🚀 Recommended Developer Stack</h3>
+      <p>Deploy your full-stack applications effortlessly with Vercel & MongoDB Atlas.</p>
+      <a href="#" class="affiliate-btn">Get Started Free &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 hyæt-views. Powered by Node.js & MongoDB Atlas.</p>
+    </div>
+  </footer>
+
+  <script>
+    async function loadPosts() {
+      const container = document.getElementById('posts-container');
+      try {
+        const res = await fetch('/api/posts');
+        const posts = await res.json();
+
+        if (posts.length === 0) {
+          container.innerHTML = '<p style="text-align: center; color: var(--muted);">No articles published yet. Visit <a href="/admin.html" style="color: var(--accent);">/admin.html</a> to write your first post!</p>';
+          return;
+        }
+
+        container.innerHTML = posts.map(post => `
+          <article class="post-card">
+            <span class="post-badge">${post.category || 'Tech'}</span>
+            <h2 class="post-title">${post.title}</h2>
+            <div class="post-meta">Published on ${new Date(post.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
+            <div class="post-excerpt">${post.content}</div>
+          </article>
+        `).join('');
+      } catch (err) {
+        container.innerHTML = '<p style="text-align: center; color: #f87171;">Failed to load articles. Please check server connection.</p>';
+      }
+    }
+
+    loadPosts();
+  </script>
+</body>
+</html>
 EOF
 
-python ~/portfolio/webhook_listener.py
-exit
-cat << 'EOF' > ~/portfolio/webhook_listener.py
-import json
-from http.server import BaseHTTPRequestHandler, HTTPServer
+node server.js
+vercel --prod
+node server.js
+nano server.js
+nano admin.html
+nano index.html
+node server.js
+vercel --prod
+node server.js
+rm Server.js
+cat << 'EOF' > server.js
+const dns = require('dns');
+dns.setDefaultResultOrder('ipv4first');
+dns.setServers(['8.8.8.8', '1.1.1.1']);
 
-class WebhookHandler(BaseHTTPRequestHandler):
-    def do_POST(self):
-        # Read the length of the incoming alert data
-        content_length = int(self.headers['Content-Length'])
-        post_data = self.rfile.read(content_length)
-        
-        # Parse the JSON payload from Canarytokens
-        try:
-            alert_payload = json.loads(post_data.decode('utf-8'))
-            print("\n[!] ALERT: Canarytoken Triggered!")
-            print(json.dumps(alert_payload, indent=4))
-        except Exception as e:
-            print(f"\n[!] Received non-JSON or malformed payload: {e}")
-            print(post_data.decode('utf-8'))
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const mongoose = require('mongoose');
 
-        # Send a 200 OK response back to the Canarytoken server
-        self.send_response(200)
-        self.send_header('Content-Type', 'application/json')
-        self.end_headers()
-        self.wfile.write(b'{"status":"success"}')
+const app = express();
+const PORT = process.env.PORT || 3000;
+const ADMIN_SECRET = process.env.ADMIN_SECRET || 'grahms_admin_2026';
 
-def run(port=9090):
-    server_address = ('', port)
-    httpd = HTTPServer(server_address, WebhookHandler)
-    print(f"[*] Local Webhook Listener running on port {port}...")
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        print("\n[*] Shutting down listener.")
-        httpd.server_close()
+app.use(cors());
+app.use(express.json());
 
-if __name__ == '__main__':
-    run()
+// Serve static files from root AND Public folder if it exists
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'Public')));
+app.use(express.static(path.join(__dirname, 'public')));
+
+if (process.env.MONGO_URI) {
+  mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log('⚡ Connected to MongoDB Atlas'))
+    .catch((err) => console.error('❌ MongoDB Connection Error:', err.message));
+} else {
+  console.error('❌ Error: MONGO_URI missing!');
+}
+
+const postSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  category: { type: String, default: 'General' },
+  content: { type: String, required: true },
+  createdAt: { type: Date, default: Date.now }
+});
+
+const Post = mongoose.model('Post', postSchema);
+
+app.get('/api/posts', async (req, res) => {
+  try {
+    const posts = await Post.find().sort({ createdAt: -1 });
+    res.json(posts);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch posts' });
+  }
+});
+
+app.post('/api/admin/posts', async (req, res) => {
+  const { secret, title, category, content } = req.body;
+  if (secret !== ADMIN_SECRET) {
+    return res.status(401).json({ error: 'Unauthorized: Invalid Admin Secret' });
+  }
+  try {
+    const newPost = new Post({ title, category, content });
+    await newPost.save();
+    res.status(201).json({ message: 'Post published successfully!', post: newPost });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to create post' });
+  }
+});
+
+// Explicit Route Handlers
+app.get('/admin.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'admin.html'));
+});
+
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'admin.html'));
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🛡️ Server running on http://localhost:${PORT}`);
+    console.log(`🔑 Admin page live at http://localhost:${PORT}/admin.html`);
+  });
+}
+
+module.exports = app;
 EOF
 
-python ~/portfolio/webhook_listener.py
-exit
-# 1. Force kill any old hanging processes on port 8158
-fuser -k 8158/tcp
-# 2. Hard navigate to your home service project directory
-cd /files/home/attat-services/
-# 3. Boot up the Python server freshly on your port
-python3 -m http.server 8158
-pwd && ls -F
-cd attat-services
-python3 -m http.server 8158
-# 1. Stop the current server session
-Ctrl + C
-# 2. Kill any hidden background port activity
-fuser -k 8158/tcp
-# 3. Double check that app.html is sitting ready in your folder
-ls
-# 4. Fire up the Python server again
-python3 -m http.server 8158
-ls -la
-# 1. Kill any active instance running on port 8158
-fuser -k 8158/tcp
-# 2. Make sure you are inside the correct project folder
-cd $HOME/attat-services/
-# 3. Double check your file is there
-ls index.html
-# 4. Start up the Python web engine
-python3 -m http.server 8158
-# 1. Ensure you are in your project root
-cd $HOME/attat-services/
-# 2. Create the assets structure all at once
-mkdir -p assets/css assets/images
-# 3. Initialize Git for version control tracking
-git init
-# 4. Check your setup structure to confirm everything is in place
-ls -F
-ls
-python3 -m http.server 8158
-exit
-# 1. Kill any current server instance on port 8158
-fuser -k 8158/tcp
-# 2. Change directory back to your Home Service directory
-cd $HOME/attat-services/
-# 3. Fire the Python web engine back up
-python3 -m http.server 8158
-# Update your local packages and pull down Flask instantly
-pkg update -y
-pip install flask
-touch server.py
-import random
-from flask import Flask, request, jsonify, send_from_directory
-app = Flask(__name__)
-# Simulated in-memory secure datastore to track issued tokens
-active_sessions = {}
-# 1. Route to serve your untouched index.html front-end interface automatically
-@app.route('/')
-def serve_frontend():
-# 2. Live API endpoint triggered when "Proceed to Secure Verification" is tapped
-@app.route('/api/request-otp', methods=['POST'])
-def request_otp():
-# 3. Live API endpoint to match and finalize the user's entered OTP
-@app.route('/api/verify-otp', methods=['POST'])
-def verify_otp():
-if __name__ == '__main__':
-    print("\n🚀 Attat AGHS Production Server Firing Up...")
-python3 server.py
-ls
-python3 server.py
-npm install twilio express
-node server.js
-pip install flask twilio
-python server.py
-python server.py.
-python server.py
-exit
-cd ~/attat-services
-python server.py
-exit
-cd ~/attat-services
-python server.py
-mkdir -p templates
-mv index.html templates/
-ls templates
-python server.py
-exit
-cd/~/attat-services
-python server.py
-exit
-cd ~/attat-services
-python server.py
-exit
-cd ~/attat-services
-ls
-mkdir -p templates static
-mv index.html templates/ 2>/dev/null
-mv style.css static/ 2>/dev/null
-nano templates/index.html
-nano static/style.css
-python server.py
-exit
-STR=Setup\ storage;DOA="Setup 'draw over apps' (Press ENTER)";IBO="Setup 'ignore battery optimizations' (Press ENTER)";SBP="Setup & Background pop-ups permissions";ALE="Setup 'allow-external-apps'";ICL=Install\ Clang;ACT=android.settings;PKG=package:com.termux;PT=~/.termux/termux.properties;echo $STR;termux-setup-storage;read -p "$DOA";am start -a $ACT.action.MANAGE_OVERLAY_PERMISSION -d $PKG > /dev/null;read -p "$IBO";am start -a $ACT.IGNORE_BATTERY_OPTIMIZATION_SETTINGS > /dev/null;read -p "$SBP";am start -a $ACT.APPLICATION_DETAILS_SETTINGS -d $PKG > /dev/null;echo $ALE;if [ -f $PT ];then awk '/^#/{print;next }/^\s*allow-external-apps/{gsub(/allow-external-apps.*/,"allow-external-apps=true");found=1}{print $0}END{if(!found)print "allow-external-apps=true"}' $PT > "$TMPDIR/a.tmp" && mv "$TMPDIR/a.tmp" $PT;else mkdir -p $(dirname $PT);echo 'allow-external-apps=true' > $PT;fi;echo $ICL;pkg i clang -y;apt autoremove --purge;apt clean;echo ok
-exit
-cd ~/Attat-services
-cd ~/attat-services
-python sercer.py
-python server.py
-exit
-pkg update && pkg upgrade
-termux-install-storage
-cd ~/archery-folder
-ls
-cd ~/projects
-exit
-pkg update && pkg upgrade
-termux-setup-storage
-cd ~/Grahm's-projects
-ls
-y
-pwd
-exit
-exit
-pkg update && pkg upgrade
-exit
-pkg upgrade && pkg update
-pkg install python git
-git clone https://github.com/sundowndev/phoneinfoga.git
-exit
-# Update package repositories
-pkg update && pkg upgrade -y
-# Install Node.js and Git
-pkg install nodejs git -y
-# Verify installation
-node -v
-npm -v
-# Create and enter directory
-mkdir hyat-views
-cd hyat-views
-# Initialize Node.js project
-npm init -y
-npm install express cors
-nano server.js
-node server.js
-exit
-cd ~/hyat-views
-ls
-nano index.html
-nano style.css
-nano app.js
-nano server.js
-nano index.html
-cd hyat-views
-node server.js
-exit
-cd hyat-views
-node server.js
-exit
-pkill -f node
-clear
-cd ~/hyat-views
-ls -l
-node server.js
-mv index_html index.html
-ls -l
-nano server.js
-ls -1
-nano server.js
-nano index.html
-nano style.css
-nano server.js
-nano app.js
-node server.js
-nano server.js
-node server.js
-nano index.html
-node server.js
-nano server.js
-pkill -f node
-node server.js
-nano style.css
-nano index.html
-nano app.js
-nano style.css
-nano index.html
-pkill -f node
-node server.js
-nano style.css
-node server.js
-nano app.js
-pkill -f node
-node server.js
-nano style.css
-pkill -f node
-node server.js
-nano server.js
-pkill -f node
-node server.js
-nano index.html
-pkill -f node
-node server.js
-nano index.html
-nano app.js
-pkill -f node
-node server.js
-nano index.html
-pkill -f node
-node server.js
-nano style.css
-nano app.js
-nano read.md
-node server.js
 pkill -f node && node server.js
 node server.js
-git init
-git add .
-git commit -m "Initial release: Hyæt Views v1.0 complete security suite"
-ls -la server.js index.html style.css app.js README.md
-node -c server.js
+vercel --prod
+nano post.html
+cat << 'EOF' > post.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article View | hyæt-views</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 20px; line-height: 1.7; }
+    .container { max-width: 750px; margin: 40px auto; background: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; }
+    .badge { background: rgba(56, 189, 248, 0.1); color: #38bdf8; font-size: 0.8rem; font-weight: bold; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
+    h1 { color: #fff; margin-top: 15px; font-size: 2rem; }
+    .meta { color: #94a3b8; font-size: 0.85rem; margin-bottom: 25px; border-bottom: 1px solid #334155; padding-bottom: 15px; }
+    .content { font-size: 1.05rem; color: #e2e8f0; white-space: pre-wrap; }
+    .back-btn { display: inline-block; margin-bottom: 20px; color: #38bdf8; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-btn">&larr; Back to Articles</a>
+    <div id="article-body">
+      <p style="color: #94a3b8;">Loading article...</p>
+    </div>
+  </div>
+
+  <script>
+    async function loadSinglePost() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      const bodyDiv = document.getElementById('article-body');
+
+      if (!id) {
+        bodyDiv.innerHTML = '<p style="color: #f87171;">Article ID missing.</p>';
+        return;
+      }
+
+      try {
+        const res = await fetch(`/api/posts/${id}`);
+        const post = await res.json();
+
+        if (!res.ok) {
+          bodyDiv.innerHTML = `<p style="color: #f87171;">${post.error || 'Article not found.'}</p>`;
+          return;
+        }
+
+        bodyDiv.innerHTML = `
+          <span class="badge">${post.category || 'Tech'}</span>
+          <h1>${post.title}</h1>
+          <div class="meta">Published on ${new Date(post.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
+          <div class="content">${post.content}</div>
+        `;
+      } catch (err) {
+        bodyDiv.innerHTML = '<p style="color: #f87171;">Error loading article details.</p>';
+      }
+    }
+
+    loadSinglePost();
+  </script>
+</body>
+</html>
+EOF
+
+cat << 'EOF' > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hyæt-views | Technical Insights & Web Engineering</title>
+  <style>
+    :root { --bg: #0f172a; --card-bg: #1e293b; --border: #334155; --text: #f8fafc; --muted: #94a3b8; --accent: #38bdf8; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+    header { border-bottom: 1px solid var(--border); padding: 20px 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 800; color: var(--accent); text-decoration: none; }
+    .admin-link { color: var(--muted); text-decoration: none; font-size: 0.9rem; border: 1px solid var(--border); padding: 6px 12px; border-radius: 6px; }
+    .hero { padding: 40px 0 20px 0; text-align: center; }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    .hero p { color: var(--muted); font-size: 1.1rem; }
+    .ad-slot { background: rgba(51, 65, 85, 0.3); border: 1px dashed var(--border); border-radius: 8px; padding: 15px; text-align: center; color: var(--muted); font-size: 0.85rem; margin: 25px 0; }
+    .posts-grid { display: grid; gap: 20px; margin-top: 30px; }
+    .post-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; transition: transform 0.2s ease; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+    .post-card:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .post-badge { display: inline-block; background: rgba(56, 189, 248, 0.1); color: var(--accent); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px; }
+    .post-title { margin: 0 0 10px 0; font-size: 1.4rem; color: #fff; }
+    .post-meta { font-size: 0.85rem; color: var(--muted); }
+    footer { border-top: 1px solid var(--border); margin-top: 60px; padding: 30px 0; text-align: center; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-flex">
+      <a href="/" class="logo">hyæt-views</a>
+      <a href="/admin.html" class="admin-link">Manage Site</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Engineering & Digital Growth</h1>
+      <p>Exploring modern software development, web frameworks, and digital architecture.</p>
+    </section>
+
+    <div class="ad-slot">[ Monetization Slot: Responsive Google AdSense Banner ]</div>
+
+    <div id="posts-container" class="posts-grid">
+      <p style="text-align: center; color: var(--muted);">Loading articles...</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 hyæt-views. Powered by Node.js & MongoDB Atlas.</p>
+    </div>
+  </footer>
+
+  <script>
+    async function loadPosts() {
+      const container = document.getElementById('posts-container');
+      try {
+        const res = await fetch('/api/posts');
+        const posts = await res.json();
+
+        if (posts.length === 0) {
+          container.innerHTML = '<p style="text-align: center; color: var(--muted);">No articles published yet. Visit <a href="/admin.html" style="color: var(--accent);">/admin.html</a> to publish!</p>';
+          return;
+        }
+
+        container.innerHTML = posts.map(post => `
+          <a href="/post.html?id=${post._id}" class="post-card">
+            <span class="post-badge">${post.category || 'Tech'}</span>
+            <h2 class="post-title">${post.title}</h2>
+            <div class="post-meta">Published on ${new Date(post.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} &rarr; Click to read full post</div>
+          </a>
+        `).join('');
+      } catch (err) {
+        container.innerHTML = '<p style="text-align: center; color: #f87171;">Failed to load articles.</p>';
+      }
+    }
+
+    loadPosts();
+  </script>
+</body>
+</html>
+EOF
+
 pkill -f node && node server.js
-node server.js
-nano app.js
-exit
-git add .
-git commit -m "Hyæt Views v2.0: Integrated SQLite DB, SSL Certificate Inspector, Custom Rules Engine, and REST API Key Middleware"
-curl -X POST http://localhost:3000/api/v1/scan -H "Content-Type: application/json" -H "X-API-KEY: hyaet_sec_secret_key_2026" -d '{"url":"https://www.wikipedia.org"}'
-node server.js
-npm install better-sqlite3 express
-pkill -9 node
-node server.js
-Hyæt Views v2.0 active on http://localhost:3000
-npm install express sqlite3
-nano server.js
-node server.js
-npm install express
-npm fund
-node server.js
-git add .
-git commit -m "Hyæt Views v2.0 fully functional with JSON persistence, SSL inspector, and rules engine"
-git remote add origin <your-github-repo-url>
-git branch -M main
-git push -u origin main
-pkill -f node
-exit
-cd ~/hyæt-views
-cd ~/hyat-view
-pkill -f node && node server.js
-ls -la server.js index.html style.css app.js README.md
-node -c server.js
-git add app.js
-git commit -m "Fix batch scan mode execution, clipboard fallback, and log clear handler"
-npm install better-sqlite3
-nano server.js
-nano index.html
-nano app.js
-pkill -f node && node server.js
-git add .
-git commit -m "Hyæt Views v2.0: Integrated SQLite DB, SSL Certificate Inspector, Custom Rules Engine, and REST API Key Middleware"
-pkill -f node
-exit
-pkill -f node
-node server.js
-cd ~/hyat-views
-node server.js
-nano index.html
-nano style.css
-nano server.js
-exit
-cd ~/hyat-views
-node server.js
-git remote add origin https://github.com/grahamonlineedu-wq/hyaet-views.git
-git branch -M main
-git push -u origin main
-exit
-/data/data/com.termux/files/usr/bin/hollywood 
-pkg install hollywood
-hollywood
-exit
-pkg install neofetch
-neofetch
-exit
-pkg install nmap
-nmap -sn 192.168.1.0/24
-nmap -p 1-65535 192.168.1.100
-nmap -sV 192.168.1.100
-nmap -O 192.168.1.100
-nmap --script vuln 192.168.1.100
-nmap -A 192.168.1.100
-nmap -oN scan_results.txt 192.168.1.100
-nmap -sP 192.168.1.0/24
-nmap -f 192.168.1.100
-exit
-termux-wifi-status
-termux-wifi-enable true
-exit
-cd ~/hyat-views
-node server.js
-cd ~/projects/hyaet-views
-node server.js
-nano index.html
-nano style.css
-nano server.js
-nano app.js
-node server.js
-nano style.css
-node server.js
-git add style.css
-git commit -m "Update full style.css with side-by-side grid and square scan button"
-git push origin main
-git remote set-url origin https://<YOUR_NEW_TOKEN>@github.com/grahamonlineedu-wq/hyaet-views.git
-git remote set-url origin https://<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>@github.com/grahamonlineedu-wq/hyaet-views.git
-git push origin main
-nano index.html
-nano server.js
-nano index.html
-git add index.html
-git commit -m "Fix CSS class names and variable references in HTML"
-git push origin main
-nano vercel.json
-git add vercel.json
-git commit -m "Add vercel.json configuration"
-git push origin main
-node server.js
-nano style.css
-nano index.html
+vercel --prod
 node server.js
 exit

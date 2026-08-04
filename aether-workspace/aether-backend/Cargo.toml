@@ -1,0 +1,26 @@
+[package]
+name = "aether_backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Web framework and WebSocket engine
+axum = { version = "0.7", features = ["ws"] }
+
+# Asynchronous multithreaded runtime
+tokio = { version = "1.0", features = ["full"] }
+
+# Memory-safe JSON serialization/deserialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Async stream utilities for WebSockets
+futures-util = "0.3"
+
+# High-performance structured logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# UUID generation for peer identification and message indexing
+uuid = { version = "1.0", features = ["v4", "serde"] }
+
