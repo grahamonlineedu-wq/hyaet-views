@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Grahms Store</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #fffdeb; color: #1e1e1e; margin: 0; padding: 20px; line-height: 1.6; }
+    .container { max-width: 500px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .hero-img { width: 100%; height: 260px; background-size: cover; background-position: center; border-radius: 16px; margin-bottom: 16px; position: relative; }
+    .badge { position: absolute; top: 12px; right: 12px; background: #10b981; color: #fff; font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 20px; }
+    h1 { margin: 0 0 6px 0; font-size: 1.5rem; }
+    .vendor { color: #6b7280; font-size: 0.9rem; margin-bottom: 12px; }
+    .price-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+    .price { font-size: 1.5rem; font-weight: 900; color: #dc2626; }
+    .orig-price { text-decoration: line-through; color: #6b7280; }
+    .desc { background: #f9fafb; padding: 12px; border-radius: 12px; font-size: 0.9rem; margin-bottom: 20px; }
+    .buy-btn { width: 100%; background: #7c3aed; color: #fff; border: none; padding: 14px; border-radius: 12px; font-weight: 800; font-size: 1rem; cursor: pointer; }
+    .back-link { display: inline-block; margin-bottom: 15px; color: #7c3aed; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">&larr; Back to Group Hub</a>
+    <div id="details-content">Loading product information...</div>
+  </div>
+
+  <script>
+    async function loadDetails() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      const container = document.getElementById('details-content');
+
+      if (!id) {
+        container.innerHTML = '<p>Product ID missing.</p>';
+        return;
+      }
+
+      try {
+        const res = await fetch(`/api/products/${id}`);
+        const p = await res.json();
+
+        container.innerHTML = `
+          <div class="hero-img" style="background-image: url('${p.imageUrl}')">
+            <span class="badge">✔ AI VERIFIED</span>
+          </div>
+          <h1>${p.name}</h1>
+          <div class="vendor">Sold by ${p.vendor}</div>
+          <div class="price-wrap">
+            <span class="price">₦${p.price.toLocaleString()}</span>
+            <span class="orig-price">₦${p.originalPrice.toLocaleString()}</span>
+          </div>
+          <div class="desc">${p.description}</div>
+          <button class="buy-btn" onclick="processCheckout('${p.name}', ${p.price})">Buy Now & Direct Checkout 💳</button>
+        `;
+      } catch (err) {
+        container.innerHTML = '<p>Failed to load product details.</p>';
+      }
+    }
+
+    async function processCheckout(name, price) {
+      const email = prompt("Enter customer email for receipt:");
+      if (!email) return;
+
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ productName: name, price: price, customerEmail: email })
+      });
+      const data = await res.json();
+      alert(data.message);
+    }
+
+    loadDetails();
+  </script>
+</body>
+</html>
