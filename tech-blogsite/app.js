@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       filterButtons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
-      
+
       activeCategory = button.getAttribute("data-category");
       renderPosts();
     });
@@ -123,6 +123,5 @@ document.querySelector(".close-btn").onclick = () => {
 window.onclick = (e) => {
   const modal = document.getElementById("article-modal");
   if (e.target === modal) modal.style.display = "none";
-};
- 
+}; 
 
