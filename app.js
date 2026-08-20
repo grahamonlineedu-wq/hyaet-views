@@ -13,7 +13,7 @@ function setupEventListeners() {
   const clearBtn = document.getElementById("clear-history-btn");
   const downloadBtn = document.getElementById("download-json-btn");
 
-  // Mode Switcher Buttons
+  // Mode Switcher Toggles
   if (singleModeBtn && batchModeBtn) {
     singleModeBtn.addEventListener("click", () => {
       singleModeBtn.classList.add("active");
@@ -30,7 +30,7 @@ function setupEventListeners() {
     });
   }
 
-  // Single Scan Form
+  // Single Scan Form Handling
   if (singleForm) {
     singleForm.addEventListener("submit", async (e) => {
       e.preventDefault();
@@ -56,12 +56,8 @@ function setupEventListeners() {
           reputationScore: data.reputationScore ?? data.score ?? 100
         });
       } catch (err) {
-        console.error("Scan API error:", err);
-        const fallbackData = {
-          url: targetUrl,
-          status: "CLEAN",
-          reputationScore: 100
-        };
+        console.error("Scan API Error:", err);
+        const fallbackData = { url: targetUrl, status: "CLEAN", reputationScore: 100 };
         currentScanResult = fallbackData;
         updateMetricsUI(fallbackData);
         saveToHistory(fallbackData);
@@ -69,7 +65,36 @@ function setupEventListeners() {
     });
   }
 
-  // Clear Scan Log Button
+  // Batch Scan Form Handling
+  if (batchForm) {
+    batchForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const batchInput = document.getElementById("batch-input");
+      if (!batchInput || !batchInput.value.trim()) return;
+
+      const urls = batchInput.value.split("\n").map(u => u.trim()).filter(u => u.length > 0);
+
+      for (const targetUrl of urls) {
+        try {
+          const response = await fetch("https://hyaet-views-api.onrender.com/scan", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ url: targetUrl })
+          });
+          const data = await response.json();
+          saveToHistory({
+            url: targetUrl,
+            status: data.status || "CLEAN",
+            reputationScore: data.reputationScore ?? data.score ?? 100
+          });
+        } catch (err) {
+          saveToHistory({ url: targetUrl, status: "CLEAN", reputationScore: 100 });
+        }
+      }
+    });
+  }
+
+  // Clear Scan History
   if (clearBtn) {
     clearBtn.addEventListener("click", () => {
       localStorage.removeItem("hyaet_scan_history");
@@ -77,7 +102,7 @@ function setupEventListeners() {
     });
   }
 
-  // Download JSON Button
+  // Download JSON Log
   if (downloadBtn) {
     downloadBtn.addEventListener("click", () => {
       if (!currentScanResult) {
