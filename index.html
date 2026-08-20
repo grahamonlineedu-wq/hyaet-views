@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hyæt Views Engine</title>
+  <title>Hyæt Views Engine - Antivirus Link Scanner</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="theme-navy">
@@ -13,7 +13,7 @@
       <p class="subtitle">Heuristic & Algorithmic Threat Detection</p>
       
       <!-- Theme Selection Bar -->
-      <div class="theme-selector">
+      <div class="theme-selector" role="group" aria-label="Theme Selector">
         <span>Theme:</span>
         <button type="button" class="theme-btn active" data-theme="theme-navy">Navy Blue</button>
         <button type="button" class="theme-btn" data-theme="theme-pure-black">Pure Black</button>
@@ -23,55 +23,57 @@
     </header>
 
     <!-- Navigation Mode Switcher -->
-    <div class="mode-switcher">
-      <button type="button" id="single-mode-btn" class="mode-btn active">Single Scan</button>
-      <button type="button" id="batch-mode-btn" class="mode-btn">Batch Scan Mode</button>
+    <div class="mode-switcher" role="tablist">
+      <button type="button" id="single-mode-btn" class="mode-btn active" role="tab" aria-selected="true" aria-controls="scan-form">Single Scan</button>
+      <button type="button" id="batch-mode-btn" class="mode-btn" role="tab" aria-selected="false" aria-controls="batch-form">Batch Scan Mode</button>
     </div>
 
     <!-- Single Scan Input Form -->
-    <form id="scan-form" class="scan-form-container">
-      <input type="text" id="scan-input" placeholder="Enter URL or IP address..." required />
+    <form id="scan-form" class="scan-form-container" role="search">
+      <input type="text" id="scan-input" placeholder="Enter URL or IP address..." required autocomplete="off" spellcheck="false" />
       <button type="submit" id="run-scan-btn" class="btn-primary">Run Deep Scan</button>
     </form>
 
     <!-- Batch Scan Form -->
     <form id="batch-form" class="scan-form-container" style="display: none;">
-      <textarea id="batch-input" placeholder="Enter one URL per line..." rows="4"></textarea>
+      <textarea id="batch-input" placeholder="Enter one URL per line..." rows="4" spellcheck="false"></textarea>
       <button type="submit" id="run-batch-btn" class="btn-primary">Run Batch Deep Scan</button>
     </form>
 
     <!-- Metric Displays -->
-    <div class="metrics-grid">
+    <div class="metrics-grid" aria-live="polite" aria-atomic="true">
       <div class="metric-card">
         <h3>Status</h3>
-        <p id="status-val" class="metric-value">READY</p>
+        <p id="status-val" class="metric-value status-ready">READY</p>
       </div>
 
       <div class="metric-card">
         <h3>Reputation Score</h3>
-        <p id="score-val" class="metric-value">100 / 100</p>
+        <p id="score-val" class="metric-value status-neutral">100 / 100</p>
       </div>
 
       <div class="metric-card">
         <h3>Threat Flags</h3>
-        <p id="threat-val" class="metric-value">0</p>
+        <p id="threat-val" class="metric-value status-neutral">0</p>
       </div>
     </div>
 
     <!-- Export & Copy Actions -->
     <div class="action-bar">
-      <button type="button" id="download-json-btn" class="btn-secondary">📥 Download JSON Log</button>
-      <button type="button" id="copy-summary-btn" class="btn-secondary">📋 Copy Text Summary</button>
+      <button type="button" id="download-json-btn" class="btn-secondary" disabled>📥 Download JSON Log</button>
+      <button type="button" id="copy-summary-btn" class="btn-secondary" disabled>📋 Copy Text Summary</button>
     </div>
 
     <!-- Scan History Logs -->
-    <div class="history-section">
+    <section class="history-section" aria-labelledby="history-title">
       <div class="history-header">
-        <h2>RECENT SCANS</h2>
-        <button type="button" id="clear-history-btn" class="btn-danger">Clear Log</button>
+        <h2 id="history-title">RECENT SCANS</h2>
+        <button type="button" id="clear-history-btn" class="btn-danger" disabled>Clear Log</button>
       </div>
-      <div id="history-list" class="history-list"></div>
-    </div>
+      <div id="history-list" class="history-list">
+        <p class="empty-log-msg">No scan logs available in this session.</p>
+      </div>
+    </section>
   </div>
 
   <script src="app.js"></script>
