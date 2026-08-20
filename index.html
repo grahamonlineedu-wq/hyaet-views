@@ -56,16 +56,17 @@
       <!-- Threat Details Container -->
       <div id="threat-details-container"></div>
 
-      <!-- Recent Scans History Section -->
-      <section id="history-section" style="margin-top: 30px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;>
-       <h2 style="color: var(--accent-yellow); font-size: 1.1rem; letter-spacing: 0.5px;">RECENT SCANS</h2>
-          <button id="clear-history-btn" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-muted); padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 0.8rem;">Clear Log</button>
-        </div>
-        <div id="history-list" style="display: flex; flex-direction: column; gap: 8px;">
-          <!-- Dynamically populated scan history entries -->
-        </div>
-      </section>
+        <!-- Recent Scans History Section -->
+  <section id="history-section" style="margin-top: 25px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <h3 style="color: var(--accent-yellow, #ffcc00); font-size: 1.1rem; letter-spacing: 0.5px; margin: 0;">RECENT SCANS</h3>
+      <button id="clear-history-btn" style="background: #1a1a1a; color: #aaaaaa; border: 1px solid #333333; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; cursor: pointer;">Clear Log</button>
+    </div>
+    <div id="history-list" style="display: flex; flex-direction: column; gap: 8px;">
+      <!-- Dynamically populated scan history entries -->
+    </div>
+  </section>
+
     </main>
 
   </div>
@@ -73,5 +74,3 @@
   <script src="app.js"></script>
 </body>
 </html>
-
-
