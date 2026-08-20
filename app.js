@@ -10,36 +10,36 @@ function setupEventListeners() {
   const batchModeBtn = document.getElementById("batch-mode-btn");
   const singleForm = document.getElementById("scan-form");
   const batchForm = document.getElementById("batch-form");
+  const clearBtn = document.getElementById("clear-history-btn");
   const downloadBtn = document.getElementById("download-json-btn");
 
-  // Mode Switcher Listeners
+  // Mode Switcher Buttons
   if (singleModeBtn && batchModeBtn) {
     singleModeBtn.addEventListener("click", () => {
       singleModeBtn.classList.add("active");
       batchModeBtn.classList.remove("active");
-      if (singleForm) singleForm.style.display = "block";
+      if (singleForm) singleForm.style.display = "flex";
       if (batchForm) batchForm.style.display = "none";
     });
 
     batchModeBtn.addEventListener("click", () => {
       batchModeBtn.classList.add("active");
       singleModeBtn.classList.remove("active");
-      if (batchForm) batchForm.style.display = "block";
+      if (batchForm) batchForm.style.display = "flex";
       if (singleForm) singleForm.style.display = "none";
     });
   }
 
-  // Single Scan Form Submission
+  // Single Scan Form
   if (singleForm) {
     singleForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const urlInput = document.getElementById("url-input");
+      const urlInput = document.getElementById("scan-input") || document.getElementById("url-input");
       if (!urlInput || !urlInput.value.trim()) return;
 
       const targetUrl = urlInput.value.trim();
-      
+
       try {
-        // Example API call logic (update API endpoint if needed)
         const response = await fetch("https://hyaet-views-api.onrender.com/scan", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -49,11 +49,14 @@ function setupEventListeners() {
         const data = await response.json();
         currentScanResult = data;
 
-        // Render UI Updates
         updateMetricsUI(data);
-        saveToHistory(data);
+        saveToHistory({
+          url: targetUrl,
+          status: data.status || "CLEAN",
+          reputationScore: data.reputationScore ?? data.score ?? 100
+        });
       } catch (err) {
-        console.error("Scan error:", err);
+        console.error("Scan API error:", err);
         const fallbackData = {
           url: targetUrl,
           status: "CLEAN",
@@ -66,7 +69,15 @@ function setupEventListeners() {
     });
   }
 
-  // Download JSON Log Listener
+  // Clear Scan Log Button
+  if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+      localStorage.removeItem("hyaet_scan_history");
+      loadScanHistory();
+    });
+  }
+
+  // Download JSON Button
   if (downloadBtn) {
     downloadBtn.addEventListener("click", () => {
       if (!currentScanResult) {
@@ -83,16 +94,16 @@ function setupEventListeners() {
 }
 
 function updateMetricsUI(data) {
-  const statusValue = document.getElementById("status-value");
-  const scoreValue = document.getElementById("score-value");
+  const statusVal = document.getElementById("status-val") || document.getElementById("status-value");
+  const scoreVal = document.getElementById("score-val") || document.getElementById("score-value");
 
-  if (statusValue) statusValue.textContent = data.status || "UNKNOWN";
-  if (scoreValue) scoreValue.textContent = data.reputationScore ?? data.score ?? "100/100";
+  if (statusVal) statusVal.textContent = data.status || "UNKNOWN";
+  if (scoreVal) scoreVal.textContent = data.reputationScore ?? data.score ?? "100 / 100";
 }
 
 function saveToHistory(scanData) {
   let history = JSON.parse(localStorage.getItem("hyaet_scan_history") || "[]");
-  
+
   const newEntry = {
     url: scanData.url || scanData.target || "N/A",
     status: scanData.status || "CLEAN",
@@ -115,17 +126,17 @@ function loadScanHistory() {
   historyList.innerHTML = "";
 
   if (history.length === 0) {
-    historyList.innerHTML = `<div style="color: #666; font-size: 0.85rem; padding: 10px 0;">No recent scans recorded.</div>`;
+    historyList.innerHTML = `<div style="color: #666666; font-size: 0.85rem; padding: 10px 0;">No recent scans recorded.</div>`;
     return;
   }
 
   history.forEach(item => {
     const card = document.createElement("div");
     card.className = "scan-card";
-    
+
     let statusClass = "status-clean";
     const statusLower = (item.status || "").toLowerCase();
-    
+
     if (statusLower.includes("risk") || statusLower.includes("suspicious")) {
       statusClass = "status-high-risk";
     } else if (statusLower.includes("invalid")) {
