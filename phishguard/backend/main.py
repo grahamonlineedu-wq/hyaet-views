@@ -67,6 +67,15 @@ def analyze_url(url):
     status = "safe" if score < 30 else "suspicious" if score < 70 else "malicious"
     return score, status, reasons
 
+@app.get("/")
+def read_root():
+    return {
+        "status": "online",
+        "system": "PhishGuard Threat Engine API",
+        "docs": "/docs"
+    }
+
+
 @app.post("/scan")
 def scan(req: ScanRequest, db: Session = Depends(get_db)):
     score, status, reasons = analyze_url(req.url)
