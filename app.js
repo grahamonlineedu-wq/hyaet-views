@@ -1,9 +1,26 @@
 let currentScanResult = null;
 
 document.addEventListener("DOMContentLoaded", () => {
+  setupThemeSelector();
   setupEventListeners();
   loadScanHistory();
 });
+
+function setupThemeSelector() {
+  const themeBtns = document.querySelectorAll(".theme-btn");
+  const savedTheme = localStorage.getItem("hyaet_theme") || "theme-navy";
+  
+  document.body.className = savedTheme;
+  themeBtns.forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.theme === savedTheme);
+    btn.addEventListener("click", () => {
+      themeBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      document.body.className = btn.dataset.theme;
+      localStorage.setItem("hyaet_theme", btn.dataset.theme);
+    });
+  });
+}
 
 function setupEventListeners() {
   const singleModeBtn = document.getElementById("single-mode-btn");
@@ -12,8 +29,9 @@ function setupEventListeners() {
   const batchForm = document.getElementById("batch-form");
   const clearBtn = document.getElementById("clear-history-btn");
   const downloadBtn = document.getElementById("download-json-btn");
+  const copyBtn = document.getElementById("copy-summary-btn");
 
-  // Mode Switcher Toggles
+  // Switcher Actions
   if (singleModeBtn && batchModeBtn) {
     singleModeBtn.addEventListener("click", () => {
       singleModeBtn.classList.add("active");
@@ -30,14 +48,15 @@ function setupEventListeners() {
     });
   }
 
-  // Single Scan Form Handling
+  // Single URL Scan
   if (singleForm) {
     singleForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const urlInput = document.getElementById("scan-input") || document.getElementById("url-input");
+      const urlInput = document.getElementById("scan-input");
       if (!urlInput || !urlInput.value.trim()) return;
 
       const targetUrl = urlInput.value.trim();
+      updateMetricsUI({ status: "SCANNING...", reputationScore: "...", threatFlags: "..." });
 
       try {
         const response = await fetch("https://hyaet-views-api.onrender.com/scan", {
@@ -53,11 +72,12 @@ function setupEventListeners() {
         saveToHistory({
           url: targetUrl,
           status: data.status || "CLEAN",
-          reputationScore: data.reputationScore ?? data.score ?? 100
+          reputationScore: data.reputationScore ?? data.score ?? 100,
+          threatFlags: data.threatFlags ?? 0
         });
       } catch (err) {
-        console.error("Scan API Error:", err);
-        const fallbackData = { url: targetUrl, status: "CLEAN", reputationScore: 100 };
+        console.error("API error:", err);
+        const fallbackData = { url: targetUrl, status: "CLEAN", reputationScore: 100, threatFlags: 0 };
         currentScanResult = fallbackData;
         updateMetricsUI(fallbackData);
         saveToHistory(fallbackData);
@@ -65,36 +85,19 @@ function setupEventListeners() {
     });
   }
 
-  // Batch Scan Form Handling
-  if (batchForm) {
-    batchForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const batchInput = document.getElementById("batch-input");
-      if (!batchInput || !batchInput.value.trim()) return;
-
-      const urls = batchInput.value.split("\n").map(u => u.trim()).filter(u => u.length > 0);
-
-      for (const targetUrl of urls) {
-        try {
-          const response = await fetch("https://hyaet-views-api.onrender.com/scan", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ url: targetUrl })
-          });
-          const data = await response.json();
-          saveToHistory({
-            url: targetUrl,
-            status: data.status || "CLEAN",
-            reputationScore: data.reputationScore ?? data.score ?? 100
-          });
-        } catch (err) {
-          saveToHistory({ url: targetUrl, status: "CLEAN", reputationScore: 100 });
-        }
+  // Copy Summary Action
+  if (copyBtn) {
+    copyBtn.addEventListener("click", () => {
+      if (!currentScanResult) {
+        alert("Run a scan first to generate a summary.");
+        return;
       }
+      const text = `Hyæt Views Scan Summary\nURL: ${currentScanResult.url || 'N/A'}\nStatus: ${currentScanResult.status || 'CLEAN'}\nScore: ${currentScanResult.reputationScore ?? 100}\nFlags: ${currentScanResult.threatFlags ?? 0}`;
+      navigator.clipboard.writeText(text).then(() => alert("Summary copied to clipboard!"));
     });
   }
 
-  // Clear Scan History
+  // Clear History
   if (clearBtn) {
     clearBtn.addEventListener("click", () => {
       localStorage.removeItem("hyaet_scan_history");
@@ -102,35 +105,36 @@ function setupEventListeners() {
     });
   }
 
-  // Download JSON Log
+  // Download JSON
   if (downloadBtn) {
     downloadBtn.addEventListener("click", () => {
       if (!currentScanResult) {
-        alert("Please run a scan first to generate log data.");
+        alert("Run a scan first to generate log data.");
         return;
       }
       const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(currentScanResult, null, 2));
-      const dlAnchorElem = document.createElement("a");
-      dlAnchorElem.setAttribute("href", dataStr);
-      dlAnchorElem.setAttribute("download", `scan_log_${Date.now()}.json`);
-      dlAnchorElem.click();
+      const dlAnchor = document.createElement("a");
+      dlAnchor.setAttribute("href", dataStr);
+      dlAnchor.setAttribute("download", `scan_log_${Date.now()}.json`);
+      dlAnchor.click();
     });
   }
 }
 
 function updateMetricsUI(data) {
-  const statusVal = document.getElementById("status-val") || document.getElementById("status-value");
-  const scoreVal = document.getElementById("score-val") || document.getElementById("score-value");
+  const statusVal = document.getElementById("status-val");
+  const scoreVal = document.getElementById("score-val");
+  const threatVal = document.getElementById("threat-val");
 
-  if (statusVal) statusVal.textContent = data.status || "UNKNOWN";
+  if (statusVal) statusVal.textContent = data.status || "CLEAN";
   if (scoreVal) scoreVal.textContent = data.reputationScore ?? data.score ?? "100 / 100";
+  if (threatVal) threatVal.textContent = data.threatFlags ?? 0;
 }
 
 function saveToHistory(scanData) {
   let history = JSON.parse(localStorage.getItem("hyaet_scan_history") || "[]");
-
   const newEntry = {
-    url: scanData.url || scanData.target || "N/A",
+    url: scanData.url || "N/A",
     status: scanData.status || "CLEAN",
     score: scanData.reputationScore ?? scanData.score ?? 100,
     timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
@@ -158,20 +162,13 @@ function loadScanHistory() {
   history.forEach(item => {
     const card = document.createElement("div");
     card.className = "scan-card";
-
-    let statusClass = "status-clean";
     const statusLower = (item.status || "").toLowerCase();
-
-    if (statusLower.includes("risk") || statusLower.includes("suspicious")) {
-      statusClass = "status-high-risk";
-    } else if (statusLower.includes("invalid")) {
-      statusClass = "status-invalid";
-    }
+    const statusClass = (statusLower.includes("risk") || statusLower.includes("suspicious")) ? "status-high-risk" : "status-clean";
 
     card.innerHTML = `
-      <span style="color: #ffffff; font-size: 0.9rem; max-width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${item.url}</span>
+      <span style="color: #ffffff; font-size: 0.85rem; max-width: 55%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${item.url}</span>
       <div>
-        <span class="${statusClass}">${(item.status || "UNKNOWN").toUpperCase()}</span>
+        <span class="${statusClass}">${(item.status || "CLEAN").toUpperCase()}</span>
         <span class="timestamp">${item.timestamp}</span>
       </div>
     `;
